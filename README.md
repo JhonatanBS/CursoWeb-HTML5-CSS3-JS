@@ -1,2 +1,18 @@
-# CursoWeb-HTML5-CSS3-JS
-Curso de HTML5,CSS3 e Java Script na UDEMY . 
+
+<html lang="pt-br">
+   <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Jhonatan">
+        <meta name="description" content="Curso">
+        <meta name="keywords" content="html5, tecnologia">
+  </head>
+  <body>
+    <h1>Curso de Web Design</h1>
+    <hr>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JAVA SCRIPT</li>
+    </ul>
+  </body>
+</html>
