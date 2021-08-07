@@ -8,14 +8,12 @@
   </head>
   <body>
     <h1>Curso de Web Design</h1>
-    <hr>
     <ul>
       <li>HTML5</li>
       <li>CSS3</li>
       <li>JAVA SCRIPT</li>
     </ul>
     <h2>Projetos</h2>
-    <hr>
     <img src="Projeto1.png" alt="">
     <hr>
   </body>
