@@ -15,6 +15,7 @@
     </ul>
     <h2>Projetos</h2>
     <img src="Projeto1.png" alt="">
+    <img src="Projeto2.png" alt="">
     <hr>
   </body>
 </html>
