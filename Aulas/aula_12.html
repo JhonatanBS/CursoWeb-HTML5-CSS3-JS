@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+         <title> pagina de exemplo estrutura basica </title>
+         <meta charset="utf-8">
+         <meta name="author" content="Daniel">
+         <meta name="description" content="descrição bacanuda">
+         <meta name="keywords" content="html5, tecnologia">
+
+         <style>
+             /*Acessa a lista e esconde ela com o display none*/
+             li ul{
+                 display: none;
+             }
+             /*Ao passar a seta do mouse sobre a lista, a cor designada aparecerá */ 
+             li:hover{
+                 background-color: wheat;
+             }
+             /*Ao passar a seta do mouse sobre a lista, a lista aparecerá*/
+             li:hover ul{
+                 display: block;
+             }
+
+
+         </style>
+    </head>
+
+    <body>
+        <!--Lista Aninhada, uma lista dentro de outra lista-->
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2
+                <ul>
+                    <li>Item 2.1</li>
+                    <li>Item 2.2</li>
+                </ul>
+            </li>
+            <li>Item 3</li>
+        </ul>
+     <hr>
+        <!--Lista definida, com termos e descrição-->
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de Marcação</dd>
+
+            <dt>CSS</dt>
+            <dd>Linguagem de formatação visual para o HTML</dd>
+        </dl>
+        
+        <hr>
+
+        <dl>
+            <dt>www</dt>
+            <dt>internet</dt>
+            <dd>Conexão de internet mundial</dd>
+        </dl>
+    </body>
+</html>
