@@ -1,0 +1,130 @@
+body{
+   margin: 0;
+   background-color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.cabeçalho{
+    background-image: url(../images/topo.jpg);
+    height: 700px;
+    background-position: right center ;
+    background-size: cover;
+    position: relative;
+}
+
+.logo{
+    height: 100px;
+    width: 150px;
+    background-image: inherit;
+    margin: 10px 0px 0px 30px;
+    border-radius: 45px;
+    
+}
+
+.header-nav ul{
+   position: absolute;
+   top: 0;
+   right: 0;
+   display: inline-block;
+   margin-right: 30px;
+
+}
+
+.header-nav li{
+    text-transform: uppercase;
+    font-weight: bolder;
+    display: inline-block;
+    margin: 10px ;
+    font-size: 30px;
+}
+.header-nav a{
+    text-decoration: none ;
+    color: white;
+    text-shadow: 3px 5px 5px black;
+}
+
+.header-nav a:hover{
+    color:slategray;
+}
+
+.titulo{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 100px;
+    text-shadow: 3px 5px 5px black;
+    color: white;
+    background-size: cover;
+}
+
+main{
+  width: 80%;
+  margin: auto;
+  background-color: lightslategray;
+  border-radius: 20px;
+  margin-top: 30px;
+  background-image: url(../images/fundo.jpg);
+}
+
+.menu{
+   padding: 10px;
+   margin-top: 15px;
+   overflow: auto;
+}
+
+img{
+    height: 350px;
+    width: 500px;
+}
+
+.card{
+    width: 32%;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 1%;
+}
+
+.plataforma, .luta{
+    margin-right: 1%;
+}
+
+.card img{
+    width: 100%;
+}
+
+p{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+      
+}
+
+p a{
+    color: white;
+    text-shadow: 3px 5px 5px black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+p a:hover{
+    color: red;
+}
+
+.rodape{
+    height: 120px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    background-color: #6b6c68;
+    line-height: 120px;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
