@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+         <title> pagina de exemplo estrutura basica </title>
+         <meta charset="utf-8">
+         <meta name="author" content="Daniel">
+         <meta name="description" content="descrição bacanuda">
+         <meta name="keywords" content="html5, tecnologia">
+
+         <style>
+             body{
+                 font-family: Verdana, Geneva, Tahoma, sans-serif;
+             }
+             
+             table{
+                 border-collapse: collapse;
+                 width: 80%;
+                 margin: auto;
+                 background-color: beige;
+             }
+
+             th{
+                 background-color: rgb(185, 223, 18);border:  2px solid chocolate;
+                 padding: 15px;
+             }
+
+             td{
+                 border: 1px solid black;
+                 text-align: center;
+                 padding: 10px;
+             }
+
+             
+         </style>
+    </head>
+
+    <body>
+         <!--Para iniciar uma tabela, usamos no inicio a tag table-->
+         <table>
+            <!--Nome para minha tabela, com a tag caption-->
+            <caption>Tabela de preços de Cursos</caption>
+            <!--Parte superior da tabela com a tag thead-->
+            <thead>
+                  <!--tag tr para formar um tabela e th para as colunas da tabela-->
+                  <tr>
+                      <th>Área</th>
+                      <th>Curso</th>
+                      <th>Investimento</th>
+                  </tr>
+            </thead>
+            <!--Parte inferior da tabela com a tag tfoot-->
+            <tfoot>
+                  <!--tag tr para formar um tabela e th para as linhas da tabela-->
+                  <tr>
+                      <td colspan="3">Valores sujeitos a alterações sem prévio aviso</td>
+                  </tr>
+            </tfoot>
+            <!--tag tbody para formação do corpo da tabela-->
+            <tbody>
+                  <!--tag tr para formar um tabela e th para as linhas da tabela-->
+                  <tr>
+                      <td rowspan="3">Design</td><!--tag rowspan para mesclar linhas e o tanto de linhas-->
+                      <td>InDesign</td>
+                      <td>R$ 1.000,00</td>
+                  </tr>
+
+                  <tr>
+                    
+                    <td>Photoshop</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+
+                <tr>
+                    
+                    <td>Illustrator</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="4">Developer</td><!--tag rowspan para mesclar linhas e a quantidade de linhas-->
+                    <td>HTML</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+
+                <tr>
+                    
+                    <td>CSS</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+
+                <tr>
+                    
+                    <td>Javascript</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+
+                <tr>
+                    
+                    <td>PHP</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+
+            </tbody>
+         <!--Observação:-->   
+         <!--tag colspan para mesclar colunas e a quantidade de colunas-->
+         </table>
+    </body>
+</html>
