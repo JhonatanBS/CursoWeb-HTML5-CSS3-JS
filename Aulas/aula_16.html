@@ -11,11 +11,14 @@
     <body>
          <h1>Exemplo de Formulário</h1>
          <!--Para criar um formulário, utilize a tag form-->
-         <form action="http://google.com/search" method="GET" target="_blank">
+         <form>
+             <legend>Login</legend>
              <!--Tag input, cria um barra de pesquisa com type texto-->
-             <label for="unico">Faça uma busca</label>
-             <input type="text" name="q" id="unico">
-             <input type="submit" value="ok">
+             <label for="log">User:</label>
+             <input type="text" name="q" id="log">
+             <label for="pass">Passoword:</label>
+             <input type="password" name="q" id="pass">
+             <input type="submit" value="Login">
          </form>
     </body>
 </html>
