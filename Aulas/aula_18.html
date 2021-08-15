@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+         <title> Página de exemplo de estrutura basica</title>
+         <meta charset="utf-8">
+         <meta name="Autor" content=" Jhonatan"> 
+         <meta name="Description" content=" LIsta de Documentos">
+         <meta name="keywords" content="html5, tecnologia">
+         
+         <style>
+             #radius-1{
+                 background-color: orange;
+                 width: 300px;
+                 height: 300px;
+                 margin: 50px auto;
+                 /*Cria um circulo através da tag border-radius*/
+                 border-radius: 50%;/*Valores em porcentagens*/
+             }
+
+             #radius-2{
+                 background-color: black;
+                 width: 300px;
+                 height: 300px;
+                 margin: 50px auto;
+                 /*Cria um formato de acordo com os valores de entrada*/
+                 border-radius: 30px 150px;/*Usando pixels*/
+             }
+
+             #radius-3{
+                 background-color: red;
+                 width: 300px;
+                 height: 300px;
+                 margin: 50px auto;
+                 /*Gera um formato e a barra diminuir mais*/
+                 border-radius: 50% 30px / 50px;/*pixel e percentagem*/
+             }
+
+             #radius-4{
+                 background-color: chartreuse;
+                 width: 300px;
+                 height: 300px;
+                 margin: 50px auto;
+
+                 border-radius: 0px;
+             }
+         </style>
+    </head>
+    <body>
+        <h1>Efeitos em CSS</h1>
+         <div id="radius-1"></div>
+         <div id="radius-2"></div>
+         <div id="radius-3"></div>
+         <div id="radius-4"></div>
+    </body>
+</html>
