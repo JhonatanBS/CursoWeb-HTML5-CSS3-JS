@@ -7,16 +7,18 @@
          <meta name="Autor" content=" Jhonatan"> 
          <meta name="Description" content=" LIsta de Documentos">
          <meta name="keywords" content="html5, tecnologia">
-
+         
+        </style>
     </head>
     <body>
-         <form>
-             <fieldset>
-                 <label>email</label>
-                 <input type="email">
+         <form action="#" method="POST" class="formlogin">
+             <fieldset class="form">
+                 <label for="email">email
+                 <input type="email" required maxlength="10" placeholder="exemplo@gmail.com" >
+                </label>
                  <br>
                  <label>Números de filhos</label>
-                 <input type="number" min="0" max="100">
+                 <input type="number" min="0" max="100" step="3">
                  <br>
                  <label>Data de Nascimento</label>
                  <input type="date">
@@ -27,8 +29,60 @@
                 </label>
                  <label>Feminino</label>
                  <input type="radio" name="botão">
-                 <input type="submit" name="enviar">
+                 <br>
+                 <label>Estados</label>
+                 <select name="estado">
+                    <option value="0">Selecione</option>
+                     <option value="SP">São Paulo</option>
+                     <option value="DF">Distrito Federal</option>
+                     <option value="RJ">Rio Janeiro</option>
+                 </select>
+                 
              </fieldset>
+
+             <fieldset>
+                 <legend>Área de interesse</legend>
+
+                 <label>
+                     <input type="checkbox" name="html" value="html">HTML
+                 </label>
+                 
+                 <label>
+                    <input type="checkbox" name="CSS" value="css">CSS
+                </label>
+                
+                <label>
+                    <input type="checkbox" name="JS" value="JS">JavaScript
+                </label> 
+
+             </fieldset>
+
+             <fieldset>
+                 <legend>Mensagem</legend>
+                 <textarea style="resize:none" name="msg" 
+                 cols="30" rows="10" maxlength="10"></textarea> 
+                 <br>
+                 <textarea style="resize:none" name="contrato" 
+                 cols="30" rows="10" readonly>Esse contrato é protegido</textarea>
+                 <br>
+                <label>
+                    <input type="checkbox" checked>Li e aceito
+                </label>
+                <br>
+                <input type="range" min="0" max="10" step="2">
+                <input type="time">
+                <input type="color">
+
+                <select>
+                    <option>Hulk</option>
+                    <option>Homem de ferro</option>
+                    <option>Capitão America</option>
+                </select>
+             </fieldset>
+             <br>
+             <input type="submit" value="enviar">
+             <input type="button" value="button">
+             <input type="reset" value="reset">
          </form>
           
     </body>
