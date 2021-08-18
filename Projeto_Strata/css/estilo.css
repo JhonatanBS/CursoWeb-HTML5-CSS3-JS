@@ -1,0 +1,133 @@
+/*body: Estrutura Principal, no qual o conteúdo do HTML está presente*/
+body{
+    /*Fonte 'Open Sans' importada do site do google e aplicada em todo texto*/
+    font-family: 'Open Sans', arial,sans-serif;
+    /*Cor dos caracteres do Projeto*/
+    color: #666;
+    /*Distancia o espaço entre linhas de texto*/
+    line-height: 1.7;
+}
+/*a: Tag referente a links*/
+a{  /*Efeito de movimento: transição de cor tempo / tempo / forma linear*/ 
+    transition: color .2s linear,border .2s linear;/*Transição tanto da cor, quanto da borda do link*/
+    text-decoration: none;/*remove o sublinhado que vem no link*/
+    border-bottom: 1px dotted;/*Colocar uma borda na parte de baixo com um tamanho 1px e sublinhado com bolinhas*/
+    color: #49bf9b;
+}
+/*hover: Efeito ao passar a seta do mouse sobre o link*/
+a:hover{
+    /*Torna a borda de baixo do link na cor transparente*/
+    border-bottom-color: transparent;
+}
+/*p: tag que representa parágrafos*/
+p{  /*margin:Distanciamento externo da página ou bloco*/
+    margin: 0 0 2em;/*em: Ele retorna o tamanho do font-size, neste caso o bottom da um espaço do tamanho da fonte*/
+}
+/*h1 até h6: Níveis de tamanho para títulos e sub-títulos*/
+h1, h2, h3, h4, h5, h6{
+    color: #787878;/*Aplica uma cor cinza em todos os caracteres*/
+    font-weight: normal;/*Remove o negrito que geralmente vem nos títulos*/
+    /*margin:Distanciamento externo da página ou bloco*/
+    margin: 0 0 1em;/*em: Ele retorna o tamanho do font-size, neste caso o bottom da um espaço do tamanho da fonte*/
+}
+/*h1: Nível 1 de um título*/
+h1{
+    font-size: 36px;/*Tamanho das fontes podendo ser por pixels, porcentagem ou graus*/
+}
+/*h2: Nível 2 de um título*/
+h2{
+    font-size: 30px;/*Tamanho das fontes podendo ser por pixels, porcentagem ou graus*/
+}
+/*h3: Nível 3 de um título*/
+h3{
+    font-size: 25px;/*Tamanho das fontes podendo ser por pixels, porcentagem ou graus*/
+}
+/*h4: Nível 4 de um título*/
+h4{
+    font-size: 22px;/*Tamanho das fontes podendo ser por pixels, porcentagem ou graus*/
+}
+/*h5: Nível 5 de um título*/
+h5{
+    font-size: 18px;/*Tamanho das fontes podendo ser por pixels, porcentagem ou graus*/
+}
+/*h6: Nível 6 de um título*/
+h6{
+    font-size: 15px;/*Tamanho das fontes podendo ser por pixels, porcentagem ou graus*/
+}
+/*sub: faz o texto descer, sup: faz texto subir*/
+sub, sup{
+    /*Tamanho da fonte*/
+    font-size: 12px;
+}
+/*blockquote: refere ao texto como uma citação*/
+blockquote{
+    border-left: 5px solid #efefef;
+    /*margin:Distanciamento externo da página ou bloco*/
+    margin: 2em 0;/*em: Ele retorna o tamanho do font-size, neste caso o top/bottom da um espaço do tamanho da fonte*/
+    /*margin:Distanciamento interno da página ou bloco*/
+    padding: .5em 0 .5em 1.5em;/*em: Ele retorna o tamanho do font-size, neste caso o top/bottom/left da um espaço do tamanho da fonte*/
+}
+/*code: Representa que o texto é um pequeno código*/
+code{
+    background-color: #f7f7f7;/*Insere um fundo na cor designada*/
+    border-radius: .35em;/*Arrendonda as bordas de um bloco ou imagem*/
+    border: 2px solid #efefef;/*Manipula a borda com: tamanho / formato / cor*/
+    font-size: .9em;/*Tamanho da fonte*/
+    padding: 0 .25em 0.65em;/*Distanciamento interno top right bottom left*/
+    font-family: "courier new", monospace;/*Fonte de escrita usada para códigos*/
+    color: #929292;/*cor dos caracteres do código*/
+}
+/*Acessa o codigo com o pre: texto pré-formatado*/
+pre code{
+    display: block;/*Transforma um texto em um bloco*/
+}
+/*Header: Cabeçalho da Página, apelidado de .main-header*/
+.main-header{
+    position: fixed;/* Posiciona de forma fixa na tela*/
+    top: 0;/*top: Faz com que o topo do header fique zerado e gruda ele na parte superior da Página*/
+    left: 0;/*left: Faz com que a esquerda do header fique zerado e gruda ele na parte esquerda da Página*/
+    height: 100%;/*Faz altura ocupar 100% da página*/
+    width: 35%;/*Faz largura ocupar 35% da página*/
+    padding: 124px 54px 72px;/*Distanciamento interno aplicado top right bottom left*/
+    /*Padding tende a somar o tamanho do elemento*/
+    box-sizing: border-box;/*Corrige o efeito do padding*/
+    /*Insere uma imagem de fundo no header*/
+    background-image: url(../images/overlay.png),url(../images/bg.jpg);/*Inserção de duas imagens*/
+    /*Posicionamento das duas imagens na esquerda e no topo ou acima*/
+    background-position: left top;
+    /*Dimensão do tamanho primeira imagem em auto e a segunda prenchendo todo o espaço*/
+    background-size: auto, cover;
+    /**/
+    text-align: right;
+}
+/*h1: Tamanho de título, com apelido de .main-header-title*/
+.main-header-title{
+    font-size: 28px;/*tamanho da fonte de 28px*/
+    line-height: 1.5;/*Distancia o espaço entre linhas de texto*/
+    color: white;/*cor das letra se torna branca*/
+    font-weight: normal;/*Remove o negrito aplicado por padrão no h1*/
+    /*Efeito de transparência com o rgba*/
+    color: rgba(255, 255, 255, .5);/*255 nas três cores, alcança a cor branca e a transparencia de 0.5*/
+}
+/*strong: Dá uma ênfase na palavra ou texto, geralmente vem em negrito*/
+.main-header-title strong{
+    color: white;/*Cor dos caracteres na forma branca*/
+    font-weight: normal;/*remove o negrito da palavra*/
+}
+/*link do header, apelidado de .main-header-link*/
+.main-header-link{
+    color: inherit;/*Herda a cor do texto à qual faz parte*/
+}
+/*hover: Efeito ao passar a seta do mouse sobre o link*/
+.main-header-link:hover{
+    color: #49bf9d;/*Cor aplicada ao passar o cursor mouse, verde*/
+}
+/*Main: Parte principal da página, apelidado de .main-content*/
+.main-content{
+    /*A relação entre o header e o main, (header)35% + (main)65% = 100% da Página*/
+    width: 65%;/*Largura de 65%, baseando-se no header de 35%*/
+    margin-left: 35%;/*Afasta 35% da margem à esquerda*/
+    padding: 124px 54px 72px;/*Distanciamento interno aplicado top right bottom left*/
+    /*Padding tende a somar o tamanho do elemento*/
+    box-sizing: border-box;/*Corrige o efeito do padding*/
+}
