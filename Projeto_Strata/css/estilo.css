@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6{
     color: #787878;/*Aplica uma cor cinza em todos os caracteres*/
     font-weight: normal;/*Remove o negrito que geralmente vem nos títulos*/
     /*margin:Distanciamento externo da página ou bloco*/
-    margin: 0 0 1em;/*em: Ele retorna o tamanho do font-size, neste caso o bottom da um espaço do tamanho da fonte*/
+    margin: 1em 0;/*em: Ele retorna o tamanho do font-size, neste caso o bottom da um espaço do tamanho da fonte*/
 }
 /*h1: Nível 1 de um título*/
 h1{
@@ -80,6 +80,50 @@ code{
 /*Acessa o codigo com o pre: texto pré-formatado*/
 pre code{
     display: block;/*Transforma um texto em um bloco*/
+}
+/*ul: lista não Ordenada, ol: lista Ordenada*/
+ul, ol{
+    padding: 0;/*Zerando a distancia interna padrão das listas*/
+    margin: 0;/*Zerando a distancia externa padrão das listas*/
+    padding-left: 1.1em;/*Distanciando na esquerda de 1em da margin da página*/
+}
+/*li: listas*/
+li{
+    padding: .5em;/*Distanciando interno de 5em de todos os lados*/
+}
+/*Lista Ordenada apelidada de .ol-alternate*/
+.ol-alternate{
+    list-style-type: none;/*Remove as bolinha ou números nas listas*/
+    padding-left: 0;/*Distanciando na esquerda zerado da margin da página*/
+}
+/*Lista Ordenada, acessando a estrutura da lista*/
+.ol-alternate li{
+    border-bottom: 2px solid #d8d8d8;
+    padding-left: 0;/*Distanciando na esquerda zerado da margin da página*/
+}
+/*Pega a última da lista*/
+.ol-alternate li:last-child{
+    border: 0;/*Zera todos os lados da borda*/
+}
+/*Lista ordenada apelidada .ol-icons*/
+.ol-icons{
+    list-style-type: none;/*Remove todos os boletis ou números das listas*/
+    padding-left: 0;/*Distanciando na esquerda zerado da margin da página*/
+}
+/*Acessando a estrutura das listas*/
+.ol-icons li{
+    display: inline-block;/*Tranforma o texto em bloco*/
+    font-size: 2em;/*Tamanho da fonte*/
+    color: #49bf9d;/*Cor da fonte*/
+}
+/*Div apelidada de .row*/
+.row{
+    overflow: auto;/*Corrigir a altura*/
+}
+/*Div apelidada de .col-2*/
+.col-2{
+    width: 50%;/*Largura*/
+    float: left;/*Faz o bloco flutuar a esquerda*/
 }
 /*Header: Cabeçalho da Página, apelidado de .main-header*/
 .main-header{
