@@ -186,10 +186,46 @@ li{
 .button-default-small{
     font-size: .65em;/*Tamanho da fonte ou caracteres*/
 }
-/**/
+/*a: apelidada de .button-default-full*/
 .button-default-full{
-    display: block;
-    text-align: center;
+    display: block;/*Transforma em bloco*/
+    text-align: center;/*Centraliza o texto*/
+}
+/*table: tag para formação de tabela, apelidada de .table*/
+.table{
+     width: 100%;/*Largura de 100%, ocupa toda a página*/
+     margin: 0 0 2em 0;/*Distanciamento externo*/
+     border-collapse: collapse;/*Remove os espaçamento entre colunas e linhas*/
+}
+/*Acessa o td da tabela*/
+.table td{
+    padding: .75em;/*Cria um espaçamento interno de todos os lados*/
+}
+/*Acessa o th da tabela*/
+.table th{
+    background-color: #ccc;/*Cor de fundo da cabeça da tabela*/
+    text-align: left;/*alinha o texto a esquerda*/
+    padding: .75em;/*Distancia a parte interna de todos os lados*/
+}
+/*Acessa o corpo da tabela, e entra no td que está no tr*/
+.table tbody tr td{
+    border: 1px solid #ccc;/*borda: tamanho / formato / cor*/
+}
+/*Acessa o corpo da tabela, e pega a primeira linha*/
+.table tbody tr:first-child td{
+    border-top: 2px solid #666;/*bordo de cima: tamanho / formato / cor*/
+}
+/*Acessa o corpo da tabela, e pega a última linha*/
+.table tbody tr:last-child td{
+    border-bottom: 2px solid #666;/*bordo de baixo: tamanho / formato / cor*/
+}
+/*Acessa o corpo da tabela e pega as linhas pares*/
+.table tbody tr:nth-child(even) td{
+    background-color: #eee;/*Cor de fundo*/
+}
+/*Tabela-alternate: retira a linha de cima da primeira linha e retira a linha de baixo da ultima linha*/
+.table-alternate tbody td, .table-alternate tbody tr:first-child td, .table-alternate tbody tr:last-child td{
+    border: 1px solid #ddd;/*bordo de cima: tamanho / formato / cor*/
 }
 /*Main: Parte principal da página, apelidado de .main-content*/
 .main-content{
