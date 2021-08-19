@@ -166,6 +166,31 @@ li{
 .main-header-link:hover{
     color: #49bf9d;/*Cor aplicada ao passar o cursor mouse, verde*/
 }
+/*a: apelidada .button-default*/
+.button-default{
+    background-color: #49bf9d;/*Aplica cor no fundo*/
+    border: 2px solid #49bf9d;/*Aplica e formata a borda*/
+    color: white;/*cor da fonte ou caracteres*/
+    padding: .75em 1.5em;/*Distanciamento interno*/
+    border-radius: 5px;/*Arrendonda os cantos dos blocos ou imagens*/
+    font-size: .8em;/*Tamanho da fonte ou caractere*/
+    display: inline-block;/*Transforma o texto em bloco*/
+}
+/*a: apelidada .button-default-stroke*/
+.button-default-stroke{
+    background-color: white;/*Aplica cor no fundo*/
+    border-color: #efefef;/*Aplica cor na borda*/
+    color: inherit;/*Herda a cor original do texto*/
+}
+/*a: apelidada de .button-default-small*/
+.button-default-small{
+    font-size: .65em;/*Tamanho da fonte ou caracteres*/
+}
+/**/
+.button-default-full{
+    display: block;
+    text-align: center;
+}
 /*Main: Parte principal da página, apelidado de .main-content*/
 .main-content{
     /*A relação entre o header e o main, (header)35% + (main)65% = 100% da Página*/
