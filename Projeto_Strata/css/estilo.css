@@ -206,19 +206,32 @@ input:focus, textarea:focus{
 /*a: apelidada .button-default*/
 .button-default{
     background-color: #49bf9d;/*Aplica cor no fundo*/
-    border: 2px solid #49bf9d;/*Aplica e formata a borda*/
+    border: 3px solid #49bf9d;/*Aplica e formata a borda*/
     color: white;/*cor da fonte ou caracteres*/
     padding: .75em 1.5em;/*Distanciamento interno*/
     border-radius: 5px;/*Arrendonda os cantos dos blocos ou imagens*/
     font-size: .8em;/*Tamanho da fonte ou caractere*/
     display: inline-block;/*Transforma o texto em bloco*/
-    width: auto;
+    width: auto;/*Largura padrão*/
+    transition: all .5s;/*Efeito de transição*/
+    cursor: pointer;/*Faz o cursor virar uma mãozinha*/
+}
+/*Ao passar o mouse sobre os botões com hover, efeito de transição*/
+.button-default:hover{
+    background-color: #5ddeb9;/*Cor de fundo*/
+    border-color: transparent;/*Cor da borda*/
 }
 /*a: apelidada .button-default-stroke*/
 .button-default-stroke{
     background-color: white;/*Aplica cor no fundo*/
     border-color: #efefef;/*Aplica cor na borda*/
     color: inherit;/*Herda a cor original do texto*/
+}
+/*Ao passar o mouse ou cursor sobre o botão, efeito de transição*/
+.button-default-stroke:hover{
+    color: #49bf9d;/*cor de fundo*/
+    border-color: #49bf9d;/*Cor da borda*/
+    background-color: white;/*Cor de fundo, corrige*/
 }
 /*a: apelidada de .button-default-small*/
 .button-default-small{
