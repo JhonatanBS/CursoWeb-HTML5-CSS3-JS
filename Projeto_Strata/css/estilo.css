@@ -292,6 +292,17 @@ input:focus, textarea:focus{
     border-radius: 10px;/*Arrendonda as bordas de canto das imagens*/
     overflow: hidden;
 }
+
+/*img full*/
+.gallery-img img{
+    width: 100%;/*Largura*/
+}
+/*Acessa todos as imagens*/
+.gallery-thumb img,.gallery-img img{
+    margin-bottom: 2%;/*Espaçamento em baixo das imagens*/
+    display: inline-block;/*Transforma em bloco*/
+    border-radius: 5px;/*Arrendonda os cantos das imagens*/
+}
 /*GRID*/
 /*Divs*/
 .row{
@@ -318,6 +329,17 @@ input:focus, textarea:focus{
 /*Div que armazena uma coluna de três*/
 .col-1-3{
     width: 32%;/*Largura*/
-    margin-left: 3%;/*Distanciamento da parte esquerda*/
     float: left;/*Faz o objeto flutuar a esquerda*/
+}
+/*Div: acessa as imagens 2 5 8*/
+.col-1-3:nth-child(3n -1){/*Calculo para acessar as imagens*/
+    margin: 0 2%;/*Espaçamento externo*/
+}
+/*imagem img*/
+#img-01{
+    float: left;/*A imagem flutua a esquerda do texto*/
+}
+/*imagem img*/
+#img-02{
+    float: right;/*A imagem flutua a direita do texto*/
 }
