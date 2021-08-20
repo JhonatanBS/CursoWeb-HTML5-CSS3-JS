@@ -23,6 +23,10 @@ a:hover{
 p{  /*margin:Distanciamento externo da página ou bloco*/
     margin: 0 0 2em;/*em: Ele retorna o tamanho do font-size, neste caso o bottom da um espaço do tamanho da fonte*/
 }
+/*img: tag para inserção de imagens*/
+img{
+    max-width: 100%;/*largura que se adapta ao tamanho em pixels da imagem*/
+}
 /*h1 até h6: Níveis de tamanho para títulos e sub-títulos*/
 h1, h2, h3, h4, h5, h6{
     color: #787878;/*Aplica uma cor cinza em todos os caracteres*/
@@ -182,13 +186,13 @@ input, textarea,select{
     border: 3px solid transparent;/*Bordas com tamanho, formato e cor*/
     border-bottom: 15px;/*Bordas da parte de baixo*/
 }
-/**/
+/*select: abre um menu com opções*/
 select{
-    margin-top: 1em;
+    margin-top: 1em;/*Distancia externamente acima */
 }
-/**/
+/*Manipulando os atributos*/
 input[type="radio"],input[type="checkbox"]{
-     width: auto;
+     width: auto;/*Retorna a forma padrão de largura*/
 }
 /*textarea: Cria um área para o texto*/
 textarea{
@@ -228,6 +232,10 @@ input:focus, textarea:focus{
 .button-default-full{
     display: block;/*Transforma em bloco*/
     text-align: center;/*Centraliza o texto*/
+}
+/*a: links*/
+.imagem-link{
+    border: 0;/*Remove as bordas de links em baixo da imagem*/
 }
 /*table: tag para formação de tabela, apelidada de .table*/
 .table{
@@ -273,6 +281,16 @@ input:focus, textarea:focus{
     padding: 124px 54px 72px;/*Distanciamento interno aplicado top right bottom left*/
     /*Padding tende a somar o tamanho do elemento*/
     box-sizing: border-box;/*Corrige o efeito do padding*/
+}
+/*Acessa a imagem do cabeçalho*/
+.main-header-link img{
+    border-radius: 50%;/*Transforma em círculo a imagem*/
+    overflow: hidden;
+}
+/*Acessa as imagens do recent works*/
+.recent-works-card img{
+    border-radius: 10px;/*Arrendonda as bordas de canto das imagens*/
+    overflow: hidden;
 }
 /*GRID*/
 /*Divs*/
