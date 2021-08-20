@@ -201,7 +201,7 @@ textarea{
 /*Foca as caixas de texto do input e do textarea*/
 input:focus, textarea:focus{
     border: 3px solid #49bf9d;/*Cria uma borda com tamanho, formato e cor*/
-    outline: none;/*Remove as configurações padrões como cor e outroa*/
+    outline: none;/*Remove as configurações padrões como cor e outros*/
 }
 /*a: apelidada .button-default*/
 .button-default{
@@ -305,7 +305,6 @@ input:focus, textarea:focus{
     border-radius: 10px;/*Arrendonda as bordas de canto das imagens*/
     overflow: hidden;
 }
-
 /*img full*/
 .gallery-img img{
     width: 100%;/*Largura*/
@@ -315,6 +314,45 @@ input:focus, textarea:focus{
     margin-bottom: 2%;/*Espaçamento em baixo das imagens*/
     display: inline-block;/*Transforma em bloco*/
     border-radius: 5px;/*Arrendonda os cantos das imagens*/
+}
+/*footer: Rodapé da página*/
+.main-footer{
+    position: fixed;/*Posiciona de forma fixa na página*/
+    bottom: 0;/*zera o elemento à abaixo*/
+    width: 35%;/*Largura*/
+    left: 0;/*Zera o elemento à esquerda*/
+    padding: 0 54px 72px 0;/*Distanciamento interno aplicado top right bottom left*/
+    text-align: right; /*O texto é alinhado à direita*/
+}
+/*lista desordenada*/
+.ul-icons{
+    margin-right: 15px;/*Afasta 15px da direita */
+}
+/**/
+.main-footer li{
+   display: inline-block;
+}
+/*a: Os links de logotipo*/
+.icon-link{
+    font-size: 30px;/*Tamanho da fonte*/
+    border: none;/*Remove as bordas*/
+    color: white;/*Cor da fonte*/
+    color: rgba(255, 255, 255, .5);/*255 nas três cores, alcança a cor branca e a transparencia de 0.5*/ 
+    transition: color 0.3s linear;/*Efeito de Transição*/
+}
+/*a: Muda de cor ao passar o mouse*/
+.icon-link:hover{
+    color: #49bf9d;/*Cor da fonte*/
+}
+/*a:link do copyright*/
+.copyright a{
+    color: white;/*Cor da fonte*/
+    border-bottom: none;/*Remove a borda de baixo do link*/
+    color: rgba(255, 255, 255, .5);/*255 nas três cores, alcança a cor branca e a transparencia de 0.5*/ 
+}
+/*Muda de cor ao passar o mouse*/
+.copyright a:hover{
+    color: #49bf9d;/*Cor da fonte*/
 }
 /*GRID*/
 /*Divs*/
