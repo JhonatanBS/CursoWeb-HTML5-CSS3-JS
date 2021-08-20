@@ -169,27 +169,35 @@ li{
 /*input: tag para barra de pesquisa ou botão*/
 /*label: titulo que se relaciona com a input*/
 /*textarea: Cria um área para texto ou mensagem*/
-input, label, textarea{
+input, label, textarea,select{
     display: inline-block;/*Transforma um texto em um bloco*/
     width: 100%;/*Largura de 100% até o tamanho da div*/
     box-sizing: border-box;/*Corrige o tamanho do bloco e retira a barra de rolagem*/
 }
-/**/
-input, textarea{
-    background-color: #ccc;
-    padding: 15px;
-    border-radius: 5px;
-    border: 3px solid transparent;
-    border-bottom: 15px;
+/*input: entrada de dados e textarea: cria area para textos*/
+input, textarea,select{
+    background-color: #ccc;/*Cor de fundo*/
+    padding: 15px;/*Espaçamento interno do bloco ou texto*/
+    border-radius: 5px;/*Arrendonda as bordas ou cantos de um bloco*/
+    border: 3px solid transparent;/*Bordas com tamanho, formato e cor*/
+    border-bottom: 15px;/*Bordas da parte de baixo*/
 }
 /**/
+select{
+    margin-top: 1em;
+}
+/**/
+input[type="radio"],input[type="checkbox"]{
+     width: auto;
+}
+/*textarea: Cria um área para o texto*/
 textarea{
-    height: 10em;
+    height: 10em;/*Altura da caixa do texto*/
 }
-/**/
+/*Foca as caixas de texto do input e do textarea*/
 input:focus, textarea:focus{
-    border: 3px solid #49bf9d;
-    outline: none;
+    border: 3px solid #49bf9d;/*Cria uma borda com tamanho, formato e cor*/
+    outline: none;/*Remove as configurações padrões como cor e outroa*/
 }
 /*a: apelidada .button-default*/
 .button-default{
@@ -212,9 +220,9 @@ input:focus, textarea:focus{
 .button-default-small{
     font-size: .65em;/*Tamanho da fonte ou caracteres*/
 }
-/**/
+/*Botão enviar ou submit*/
 .button-default-big{
-    font-size: 1em;
+    font-size: 1em;/*Tamanho do botão*/
 }
 /*a: apelidada de .button-default-full*/
 .button-default-full{
@@ -267,31 +275,31 @@ input:focus, textarea:focus{
     box-sizing: border-box;/*Corrige o efeito do padding*/
 }
 /*GRID*/
-/**/
+/*Divs*/
 .row{
-    overflow: auto;
+    overflow: auto;/*Corrige de forma automatica*/
 }
-/**/
+/*Div com duas barras: nome e email*/
 .col-2{
-    width: 48.5%;
-    float: left;
+    width: 48.5%;/*Largura das duas barras: nome e email*/
+    float: left;/*Faz o objeto flutuar a esquerda*/
 }
-/**/
+/*Primeiro input da barra de nome*/
 .col-2:first-child{
-    margin-right: 1.5%;
+    margin-right: 1.5%;/*Afasta certa distancia a direita em relação a barra da direita*/
 }
-/**/
+/*Ultimo ou segundo input da barra de email*/
 .col-2:last-child{
-    margin-left: 1.5%;
+    margin-left: 1.5%;/*Afastamento à esquerda em relação a barra esquerda*/
 }
-/**/
+/*Div que armazena duas colunas de três*/
 .col-2-3{
-    width: 65%;
-    float: left;
+    width: 65%;/*Largura*/
+    float: left;/*Faz o objeto flutuar a esquerda*/
 }
-/**/
+/*Div que armazena uma coluna de três*/
 .col-1-3{
-    width: 32%;
-    margin-left: 3%;
-    float: left;
+    width: 32%;/*Largura*/
+    margin-left: 3%;/*Distanciamento da parte esquerda*/
+    float: left;/*Faz o objeto flutuar a esquerda*/
 }
