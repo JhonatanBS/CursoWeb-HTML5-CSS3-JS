@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Página de exemplo de estrutura basica</title>
+         <meta charset="utf-8">
+         <meta name="Autor" content=" Jhonatan"> 
+         <meta name="Description" content=" LIsta de Documentos">
+         <meta name="keywords" content="html5, tecnologia">
+
+         <style>
+             /*Acessa o atributo type e modifica*/
+             input[type="checkbox"]{
+                  width: 100px;/*Largura*/
+                  height: 100px;/*Altura*/
+             }
+             /*Atributo checked para quando clicar no quadrado*/
+             input[type="checkbox"]:checked{
+                  width: 50px;/*Largura*/
+                  height: 50px;/*Altura*/
+             }
+             /*Acesso o botão e desabilita o mesmo*/
+             button:disabled{
+                 background-color: red;/*Atribui a cor ao botão*/
+             }
+             /*Acessa o parágrafo*/
+             p{
+                 color: saddlebrown;/*cor da fonte*/
+             }
+             /*Acessa o paragrafo vazio e atribui antes*/
+             p:empty:before{
+                 content: "Paragrafo vazio nao da neh!";/*insere um texto*/
+             }
+             /*formata o texto ao passar o mouse sobre o input*/
+             input[type="text"]:focus{
+                 background-color: salmon;/*cor de fundo*/
+             }
+             /*Acessa as tags a e div*/
+             a:focus, a:hover,div:focus{
+                 background-color: skyblue;/*cor de fundo*/
+             }
+             /*Acessa o input e formata o placeholder que é a dica*/
+             input::placeholder{
+                 color: springgreen;
+             }
+         </style>
+
+    </head>
+
+    <body>
+         <label><input type="checkbox" value="sim">Aceito o contrato</label>
+         <button>Vai</button>
+         <button disabled>Volta</button>
+
+         <p>paragrafo 1</p>
+         <p></p>
+         <p></p>
+
+         <input type="text">
+         <input type="text" value="valor inicial">
+         <input type="text" value="valor inicial" readonly>
+         <input type="text" value="valor inicial" disabled>
+         <input type="text" placeholder="valor do placeholder">
+         
+         <ul>
+             <li><a href="#">link falso</a></li>
+             <li><a href="#">link falso</a></li>
+             <li><a href="#">link falso</a></li>   
+         </ul>
+         <!--tabindex serve para acessar as div quando usarmos o tab-->
+         <div tabindex="1">div 1</div>
+         <div tabindex="3">div 2</div>          
+         <div tabindex="2">div 3</div>
+         <hr>
+    </body>
+</html>
