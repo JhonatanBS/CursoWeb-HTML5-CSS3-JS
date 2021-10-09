@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Página de exemplo de estrutura basica</title>
+         <meta charset="utf-8">
+         <meta name="Autor" content=" Jhonatan"> 
+         <meta name="Description" content=" LIsta de Documentos">
+         <meta name="keywords" content="html5, tecnologia">
+
+         <style>
+         
+         html, body{
+             height: 100%;
+             margin: 0;
+             padding: 0;
+         }
+         .div1{
+             width: 150px;
+             height: 50px;
+             background-color: red;
+             transform: translate(50%,50%);
+         }
+         .div2{
+             width: 150px;
+             height: 50px;
+             background-color: green;
+             position: relative;
+             left: 50%;
+         }
+         .div3{
+             width: 50%;
+             overflow: hidden;
+             border: solid 2px black
+         }
+         .div3_interna{
+             background-color: greenyellow;
+             transform: translate(90%, 25px);
+         }
+
+         .div4{
+             width: 50%;
+             overflow: hidden;
+             border: solid 2px black
+         }
+         .div4_interna{
+             background-color: greenyellow;
+             transform: rotate(-25deg);
+         }
+
+         .div5{
+             width: 50%;
+             overflow: hidden;
+             border: solid 2px black
+         }
+         .div5_interna{
+             background-color: greenyellow;
+             transform: rotate(30deg);
+             transform-origin: left top ;
+         }
+
+         .div6{
+             width: 50%;
+             overflow: hidden;
+             border: solid 2px black
+         }
+         .div6_interna{
+             background-color: greenyellow;
+             transform: rotate(30deg) translate(50%);;
+             
+         }
+         .div7{
+             width: 50%;
+             overflow: hidden;
+             border: solid 2px black
+         }
+         .div7_interna{
+             background-color: greenyellow;
+             transform: translate(30px) rotate(30deg);;
+             
+         }
+         .div8{
+             height: 100px;
+             width: 100px;
+             background-color: blueviolet;
+             transform: skew(-30deg, 50deg);
+         }
+         .div9{
+             height: 100px;
+             width: 100px;
+             background-color: orange;
+             transform: scale(.5) translateX(50%);
+             transition: transform  .5s;
+         }
+         .div9:hover{
+            transform: scale(2);
+         }
+         </style>
+
+    </head>
+
+    <body>
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <hr>
+        <div class="div3">
+            <div class="div3_interna">Conteudo</div>
+                <p>
+                    HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais
+                     básico da web. Define o significado e a estrutura do conteúdo da web. 
+                     Outras tecnologias além do HTML geralmente são usadas para descrever a 
+                     aparência/apresentação (CSS) ou a funcionalidade/comportamento 
+                     (JavaScript) de uma página da web.
+                </p>
+            
+        </div>
+
+        <hr>
+
+        <div class="div4">
+            <div class="div4_interna">Conteudo</div>
+                <p>
+                    HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais
+                     básico da web. Define o significado e a estrutura do conteúdo da web. 
+                     Outras tecnologias além do HTML geralmente são usadas para descrever a 
+                     aparência/apresentação (CSS) ou a funcionalidade/comportamento 
+                     (JavaScript) de uma página da web.
+                </p>
+            
+        </div>
+
+        <hr>
+
+        <div class="div5">
+            <div class="div5_interna">Conteudo</div>
+                <p>
+                    HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais
+                     básico da web. Define o significado e a estrutura do conteúdo da web. 
+                     Outras tecnologias além do HTML geralmente são usadas para descrever a 
+                     aparência/apresentação (CSS) ou a funcionalidade/comportamento 
+                     (JavaScript) de uma página da web.
+                </p>
+            
+        </div>
+
+        <hr>
+
+        <div class="div6">
+            <div class="div6_interna">Conteudo</div>
+                <p>
+                    HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais
+                     básico da web. Define o significado e a estrutura do conteúdo da web. 
+                     Outras tecnologias além do HTML geralmente são usadas para descrever a 
+                     aparência/apresentação (CSS) ou a funcionalidade/comportamento 
+                     (JavaScript) de uma página da web.
+                </p>
+            
+        </div>
+
+        <hr>
+
+        <div class="div7">
+            <div class="div7_interna">Conteudo</div>
+                <p>
+                    HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais
+                     básico da web. Define o significado e a estrutura do conteúdo da web. 
+                     Outras tecnologias além do HTML geralmente são usadas para descrever a 
+                     aparência/apresentação (CSS) ou a funcionalidade/comportamento 
+                     (JavaScript) de uma página da web.
+                </p>
+            
+        </div>
+
+        <hr>
+
+        <div class="div8">div 8</div>
+        <div class="div9">div 9</div>
+    </body>
+</html>
