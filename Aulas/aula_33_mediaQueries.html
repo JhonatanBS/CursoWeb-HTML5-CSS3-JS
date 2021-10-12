@@ -14,11 +14,32 @@
                    background-color: yellowgreen;
                    
               }
+              .container{
+                   background-color: white;
+                   padding: 15px;
+              }
+              .container div{
+                   background-color: #ccc;
+                   margin-bottom: 15px;
+                   height: 150px;
+              }
+              .clearfix:after{
+                   content: '';
+                   display: block;
+                   clear: both;/*Corrige blocos*/
+              }
               /*Logica para definir a cor do body, caso seja a largura de
                 600px*/
               @media screen and (min-width: 600px){
                    body{
                         background-color: orange;
+                   }
+                   .container div{
+                        margin: 10px;
+                        /*Tag calc, realiza calculos*/
+                        width: calc(50% - 30px);
+                        float: left;
+                        
                    }
               }
               .teste{
@@ -33,11 +54,11 @@
 
          <p>Paragrafo qualquer</p>
          
-         <div class="teste"></div>
-         <div class="container">
+         <!--<div class="teste"></div>-->
+         <div class="container clearfix" >
               <div>div1</div>
               <div>div2</div>
-              <div>div3</div>
+         
          </div>
     </body>
 </html>
