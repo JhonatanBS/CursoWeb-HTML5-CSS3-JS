@@ -1,0 +1,39 @@
+@charset "UTF-8";/*Chama uma biblioteca para o html aceitar caracteres de acentos*/
+/*Tag Principal*/
+html{
+    font-family: sans-serif;
+}
+/*Tag para parágrafos*/
+h1,h2,h3,h4,h5,h6{
+    font-family: "Oxygen";/*Importa fontes*/
+}
+/*tag header recebe o nome de .top-header*/
+.top-header{
+    text-align: center;/*Alinha o texto no centro*/
+}
+/*tag img recebe o nome de .top-header-logo*/
+.top-header-logo{
+    margin: .5em;/*Espaçamento externo de 16px * .5em = 8*/
+}
+/*Tag nav recebe o nome de .top-nav*/
+.top-nav{
+    background-color: #612674;/*Cor de fundo*/
+    text-align: center;/*Alinha o texto no centro*/
+}
+/*Acessa a ul que esta na nav*/
+.top-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;/*Remove as bolinhas ou números da lista*/
+}
+/*Acessa a tag a que está dentro da nav e ul*/
+.top-nav a{
+    color: white;/*Cor do texto*/
+    text-decoration: none;/*Remove a linha debaixo dos links*/
+    display: block;/*Transforma uma linha em um bloco*/
+    padding: 1em;/*Espaçamento interno do tamanho do elemento pai, 16px*/
+}
+/*Ao passar a seta do mouse, aplica a condição ou configuração que esta dentro da chave*/
+.top-nav a:hover{
+    background-color: #7c3792;
+}
