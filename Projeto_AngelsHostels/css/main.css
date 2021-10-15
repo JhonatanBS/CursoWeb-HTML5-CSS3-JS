@@ -90,3 +90,23 @@ h1,h2,h3,h4,h5,h6{
     font-size: 3.5em;/*Tamanho da fonte*/
     color: #652e78;/*Cor da fonte*/
 }
+/*O segundo section recebe o nome de .main-content*/
+.main-content{
+    padding: 2em;/*Espaçamento interno*/
+}
+/*Acessa o parágrafo que está na segunda section*/
+.main-content p{
+    line-height: 1.2;/*Espaçamento de altura entre as linhas*/
+}
+/*A tag article recebe o nome de .main-content-article*/
+.main-content-article{
+    margin-bottom: 3.5em;/*Espaçamento interno de baixo*/
+}
+/*O h3 recebe o nome de .main-content-title*/
+.main-content-title{
+    letter-spacing: .2em;/*Espaçamento entre as letras*/
+    font-size: 1.25em;/*Tamanho da fonte*/
+    color: #652e78;/*Cor da fonte*/
+    text-transform: uppercase;/*Todas as letras torna-se maiúsculas*/
+    font-weight: normal;/*Retira o negrito do texto*/
+}
