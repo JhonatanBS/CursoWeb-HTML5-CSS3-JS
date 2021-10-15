@@ -7,6 +7,19 @@ html{
 h1,h2,h3,h4,h5,h6{
     font-family: "Oxygen";/*Importa fontes*/
 }
+/*tag a recebe o nome de button*/
+.button{
+    display: inline-block;/*Transforma em bloco*/
+    padding: .9em 2.5em;/*Espaçamento interno*/
+    background-color: #58c4c4;/*Cor de fundo*/
+    border-radius: 5px;/*Arrendonda as bordas do bloco*/
+    color: white;/*Cor da fonte*/
+    text-decoration: none;/*Remove a linha do link*/
+}
+/*Adiciona um efeito hover ao passar a seta do mouse em cima do bloco*/
+.button:hover{
+    background-color: #37a0a0;/*Cor de fundo*/
+}
 /*tag header recebe o nome de .top-header*/
 .top-header{
     text-align: center;/*Alinha o texto no centro*/
@@ -36,4 +49,22 @@ h1,h2,h3,h4,h5,h6{
 /*Ao passar a seta do mouse, aplica a condição ou configuração que esta dentro da chave*/
 .top-nav a:hover{
     background-color: #7c3792;
+}
+/*Tag section recebe o nome .top-content*/
+.top-content{
+    padding: 1em;/*Distanciamento interno*/
+    text-align: center;/*Centraliza o texto*/
+    background-color: #f6f6f6;/*Cor de fundo*/
+}
+/*Tag h1 recebe o nome de .top-content-title*/
+.top-content-title{
+    color: #612674;/*Cor de fonte*/
+    font-size: 1.375em;/*Tamanho da fonte*//*22 / 16 = 1.375em*/
+    margin: 1.375em;/*Disticiamento externo*/
+}
+/*Tag h2 recebe o nome de .top-content-subtitle*/
+.top-content-subtitle{
+    color: #a87bb7;/*Cor de fonte*/
+    font-size: 1em;/*Tamanho da fonte*/
+    line-height: 1.5;/*Distanciamento de altura da linha*/
 }
