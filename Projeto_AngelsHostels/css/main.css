@@ -68,3 +68,25 @@ h1,h2,h3,h4,h5,h6{
     font-size: 1em;/*Tamanho da fonte*/
     line-height: 1.5;/*Distanciamento de altura da linha*/
 }
+/*Tag section recebe o nome .middle-content*/
+.middle-content{
+    padding: 2em;/*Espaçamento interno*/
+    text-align: center;/*Centraliza o texto*/
+    background-color: #f6f6f6;/*Cor de fonte*/
+}
+/*Tag h3 recebe o nome de .middle-content-title*/
+.middle-content-title{
+    font-size: 1.25em;/*Tamanho da fonte*/
+    color: #652e78;/*Cor da fonte*/
+    text-transform: uppercase;/*Todas as letras torna-se maiúsculas*/
+}
+/*Acessa a tag p que está no section*/
+.middle-content p{
+    line-height: 1.5;/*Espaçamento na altura das linhas*/
+    color: #222;/*Cor da fonte*/
+}
+/*Acessa a span que esta dentro da section*/
+.middle-content span[class^=icon]{/*Acessa o atributo que começa com icon*/
+    font-size: 3.5em;/*Tamanho da fonte*/
+    color: #652e78;/*Cor da fonte*/
+}
