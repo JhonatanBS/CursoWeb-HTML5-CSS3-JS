@@ -110,3 +110,34 @@ h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;/*Todas as letras torna-se maiúsculas*/
     font-weight: normal;/*Retira o negrito do texto*/
 }
+/*Tag span chamada de hidden*/
+.hidden{
+    width: 0;/*Largura*/
+    height: 0;/*Altura*/
+    overflow: hidden;/*Some as palavras entre as span*/
+    opacity: 0;/*Opacidade*/
+    display: block;/*Transforma em bloco*/
+}
+/*Tag footer recebe o nome de footer*/
+.footer{
+    background-color: #25303e;/*Cor de fundo*/
+    color: #83969f;/*Cor de fonte*/
+    text-align: center;/*Centraliza os ícones ou textos*/
+    padding-bottom: 2em;/*Distanciamento interno de baixo*/
+}
+/*Tag ul recebe o nome de .footer-menushare*/
+.footer-menushare{
+    background-color: #303d4c;/*Cor de fundo*/
+    padding: .5em;/*Distanciamento interno*/
+}
+/*Acessa  lista que esta dentro da ul*/
+.footer-menushare li{
+    display: inline-block;/*Transforma em bloco*/
+    margin: 0 1em;/*Espaçamento interno*/
+}
+/*Acessa a tag a que está dentro ul*/
+.footer-menushare a{
+    font-size: 1.1em;/*Tamanho da fonte*/
+    text-decoration: none;/*Retira as linhas debaixo dos links*/
+    color: white;/*Cor da fonte*/
+}
