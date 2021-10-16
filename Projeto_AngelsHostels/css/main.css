@@ -8,7 +8,7 @@ h1,h2,h3,h4,h5,h6{
     font-family: "Oxygen";/*Importa fontes*/
 }
 /*Tag header recebe outro nome .clearfix:after*/
-.clearfix:after{
+.clearfix:after,.row:after{
    content: '';
    display: block;/*Transforma em bloco*/
    clear: both;
@@ -176,5 +176,13 @@ h1,h2,h3,h4,h5,h6{
     }
     .top-content-title,.top-content-subtitle{
         color: white;
+    }
+    .col-1_4{
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+    .main-content-article a{
+        float: right;
     }
 }
