@@ -7,6 +7,12 @@ html{
 h1,h2,h3,h4,h5,h6{
     font-family: "Oxygen";/*Importa fontes*/
 }
+/*Tag header recebe outro nome .clearfix:after*/
+.clearfix:after{
+   content: '';
+   display: block;/*Transforma em bloco*/
+   clear: both;
+}
 /*tag a recebe o nome de button*/
 .button{
     display: inline-block;/*Transforma em bloco*/
@@ -140,4 +146,35 @@ h1,h2,h3,h4,h5,h6{
     font-size: 1.1em;/*Tamanho da fonte*/
     text-decoration: none;/*Retira as linhas debaixo dos links*/
     color: white;/*Cor da fonte*/
+}
+/**/
+@media screen and (min-width: 48.75em){/*780px / 16px = 48.75em*/
+    .top-header-logo{
+        float: left;
+    }
+    .top-nav{
+        background-color: transparent;
+        float: right;
+        margin-top: 28px;
+    }
+    .top-nav ul{
+        margin: 0;
+        padding: 0;
+    }
+    .top-nav li{
+        display: inline-block;
+    }
+    .top-nav a{
+        color: #713a84;
+    }
+    .top-nav a:hover{
+        background-color: #e7d9fc;
+    }
+    .top-content{
+        background-color: #521a66;
+        color: white;
+    }
+    .top-content-title,.top-content-subtitle{
+        color: white;
+    }
 }
