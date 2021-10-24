@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- A função DOCTYPE, informa ao usuário a versão do html que deve ser renderizada -->
+<html lang="pt-br">
+    <head>
+         <title> Página de exemplo de estrutura basica</title>
+         <meta charset="utf-8">
+         <meta name="Autor" content=" Jhonatan"> 
+         <meta name="Description" content=" LIsta de Documentos">
+         <meta name="keywords" content="html5, tecnologia">
+
+         <style>
+             @keyframes anda{
+                 0%{
+                     transform: translate(0);
+                     background-color: yellow;
+                 }
+                 100%{
+                     transform: translate(300px);
+                     background-color: blue;
+                 }
+             }
+             #anima-time div{
+                 width: 80px;
+                 height: 50px;
+                 border: 2px solid orange;
+             }
+             /**/
+             #anima-time div:nth-child(1){
+                 /*animation: anda 2s;*/
+                 /*animation-name: anda;
+                 animation-duration: 2s;
+                 animation-timing-function: ease-in;*/
+
+                 animation: anda 2s ease-in-out;
+             }
+             #anima-time div:nth-child(2){
+                 animation-name: anda;
+                 animation-duration: 2s;
+                 animation-iteration-count: infinite;/*Representa a quantidade de vezes que a animação ocorrerá*/
+                 animation-direction:alternate;
+                 animation-timing-function: ease-in-out;
+                 /*OU pode fazer */
+                 animation: anda 2s ease-in-out infinite alternate;
+                }
+             #anima-time div:nth-child(3){
+                animation-name: anda;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out;
+                animation-delay: 1s;
+                animation-iteration-count: infinite;/*Representa a quantidade de vezes que a animação ocorrerá*/
+                animation-direction:alternate;
+                /*Ou pode fazer otimizado*/
+                animation: anda 2s ease-in-out 1s infinite alternate;
+                }   
+             #anima-time div:nth-child(4){
+                background-color: red;
+                animation-name: anda;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out;
+                animation-delay: 1s;
+                animation-iteration-count: 2;/*Representa a quantidade de vezes que a animação ocorrerá*/
+                animation-direction:alternate;
+                animation-fill-mode: both;
+             }  
+             #anima-time div:nth-child(5){
+                background-color: red;
+                animation-name: anda;
+                animation-duration: 2s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;/*Representa a quantidade de vezes que a animação ocorrerá*/
+                animation-direction:alternate;
+                animation-fill-mode: both;
+                animation-play-state: running;
+             }   
+             #anima-time div:nth-child(5):hover{
+                 animation-play-state: paused;
+             }
+         </style>
+    </head>
+    <body>
+         <h1>Animação</h1>
+         <div id="anima-time">
+             <div>1</div>
+             <div>2</div>
+             <div>3</div>
+             <div>4</div>
+             <div>5</div>
+         </div>
+    </body>
+</html>
