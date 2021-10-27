@@ -1,0 +1,52 @@
+/*tag body que refere-se ao corpo do HTML*/
+body{
+    margin: 0;/*Distanciamento externo*/
+    font-family: 'Open Sans', sans-serif;/*Fonte baixada, fonte  do HTML*/
+}
+/*tag header que refere-se à cabeçalho do HTML*/
+.header{
+    background-color: #fff;/*Cor de fundo*/
+    width: 100%;/*Largura*/
+}
+/*tag a recebe o nome de .logo-text*/
+.logo-text{
+    text-transform: uppercase;/*Transforma todas as letras em maiúsculas*/
+    background-color: #63c6ae;/*Cor de fundo*/
+    font-size: 24px;/*Tamanho da fonte*/
+    margin: 0;/*Distanciamento externo*/
+    padding: 20px;/*Espaçamento interno*/
+    display: block;/*Transforma em bloco*/
+    text-decoration: none;/*Remove a linha que fica em baixo do link*/
+    color: #fff;/*Cor de fonte*/
+    font-weight: bold;/*Negrito*/
+    float: left;/*Flutua para esquerda*/
+}
+/*tag nav recebe o nome de .header__nav*/
+.header__nav{
+    clear: left;/*Corrige ou limpar para esquerda*/
+}
+/*Acessa a ul(lista não-ordenada) com o apelido dado para a nav*/
+.header__nav ul{
+    margin: 0;/*Distanciamento externo*/
+    padding: 0;/*Distanciamento interno*/
+}
+/*Acessa li(lista) com o apelido dado a nav*/
+.header__nav li{
+    list-style-type: none;/*Remove as bolinhas da lista*/
+    background-color: #242c2c;/*Cor de fundo*/
+    padding: 25px 0;/*Distanciamento interno*/
+    text-align: center;/*Centraliza o texto*/
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);/*Borda da parte de baixo*/
+}
+/*Acessa a(link) com apelido dado a nav*/
+.header__nav a{
+    text-decoration: none;/*Remove as linhas debaixo do link*/
+    text-transform: uppercase;/*Transforma as letras em maiúsculas*/
+    color: #586165;/*Cor do texto*/
+    font-size: 14px;/*Tamanho da fonte*/
+    font-weight: 600;/*Intensidade da fonte*/
+}
+/**/
+.header__btnMenu{
+
+}
