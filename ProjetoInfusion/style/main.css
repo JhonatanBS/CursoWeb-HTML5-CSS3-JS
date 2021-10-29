@@ -34,7 +34,6 @@ body{
 .header__nav li{
     list-style-type: none;/*Remove as bolinhas da lista*/
     background-color: #242c2c;/*Cor de fundo*/
-    padding: 25px 0;/*Distanciamento interno*/
     text-align: center;/*Centraliza o texto*/
     border-bottom: 1px dotted rgba(255, 255, 255, 0.2);/*Borda da parte de baixo*/
 }
@@ -45,6 +44,13 @@ body{
     color: #586165;/*Cor do texto*/
     font-size: 14px;/*Tamanho da fonte*/
     font-weight: 600;/*Intensidade da fonte*/
+    display: block;/*Transforma em bloco*/
+    padding: 25px 0;/*Distanciamento interno*/
+    transition: .8s ease;/*Transição de efeito ao passar a seta do mouse*/
+}
+/*Tag com efeito hover, que permite gerar um efeito ao passar a seta do mouse*/
+.header__nav a:hover{
+    color: #63c6ae;/*Cor da fonte*/
 }
 /**/
 .header__btnMenu{
