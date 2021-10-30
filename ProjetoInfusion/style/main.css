@@ -3,6 +3,10 @@ body{
     margin: 0;/*Distanciamento externo*/
     font-family: 'Open Sans', sans-serif;/*Fonte baixada, fonte  do HTML*/
 }
+/*Tag img para imagens*/
+img{
+    max-width: 100%;/*Define o máximo para largura*/
+}
 /*tag header que refere-se à cabeçalho do HTML*/
 .header{
     background-color: #fff;/*Cor de fundo*/
@@ -54,5 +58,47 @@ body{
 }
 /**/
 .header__btnMenu{
-
+  
+}
+/*Tag section recebe o nome de .hero*/
+.hero{
+    height: 80vh;/*Altura em view port*/
+    padding: 40px 20px;/*Espaçamento interno/
+    text-align: center;/*Centraliza o texto*/
+    background-image: url(../img/01.jpg);/*Importa a imagem e insere no HTML*/
+    background-size: cover;/*Ocupa toda a área*/
+    display: flex;/**/
+    flex-direction: column;/*Transforma o objeto em coluna*/
+    justify-content: center;/*Centraliza o objeto*/
+    align-items: center;/*Transforma em um item e centraliza*/
+}
+/*Tag h1 apelidado de .hero__title*/
+.hero__title{
+    background-color: #63c6ae;/*Cor de fundo*/
+    color: white;/*Cor de fonte*/
+    font-size: 28px;/*Tamanho da fonte*/
+    font-weight: 600;/*Especifica a intensidade da fonte*/
+    padding: 30px 20px;/*Espaçamento interno*/
+    text-transform: uppercase;/*Transforma do texto em letra maiúscula*/
+}
+/*Tag p apelidado de .hero__text*/
+.hero__text{
+    background-color: #242a2c;/*Cor de fundo*/
+    margin: 5px 30px 35px;/*Espaçamento externo*/
+    color: white;/*Cor de fonte*/
+    padding: 20px;/*Espaçamento interno*/
+    font-size: 16px;/*Tamanho da fonte*/
+}
+/*tag a recebe o nome de .hero__btn*/
+.hero__btn{
+    border: 1px solid rgba(255, 255, 255, .3);/*Borda do bloco: tamanho modo cor*/
+    background-color: rgba(0, 0, 0, .2);/*Cor de fundo*/
+    border-radius: 5px;/*Arredonda as laterais do bloco*/
+    padding: 15px 25px;/*Espaçamento interno*/
+    display: inline-block;/*Transforma em bloco*/
+    color: white;/*Cor da fonte*/
+    text-decoration: none;/*Remove a parte debaixo do link*/
+    font-size: 16px;/*Tamanho da fonte*/
+    font-weight: 600;/*Especifica a intensidade da fonte*/
+    text-transform: uppercase;/*Transforma do texto em letra maiúscula*/
 }
