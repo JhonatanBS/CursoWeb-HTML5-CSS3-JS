@@ -204,3 +204,28 @@ Acessa o h2 e o p e aplica um efeito hover de passar a seta do mouse
     background-color: #455357;/*Cor de fundo*/
     color: white;/*Cor de fonte*/
 }
+/*Tag div recebe o nome de .last-articles__title*/
+.last-articles__title{
+    background-color: #63c6ae;/*Cor de fundo*/
+    padding: 5px 0;/*Espaçamento interno*/
+}
+/*Acessando h2 com a div apelidada de .last-articles__title*/
+.last-articles__title h2{
+    font-size: 24px;/*Tamanho da fonte*/
+    color: white;/*Cor da fonte*/
+    text-transform: uppercase;/*Transforma todo texto em letras maiúsculas*/
+    font-weight: 400;/*Intensidade da fonte*/
+}
+/*Tag div recebe o nome de .last-articles__thumbs*/
+.last-articles__thumbs{
+    display: grid;/*Sistema bidemensional de grid*/
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));/*Colunas: repete*/
+    grid-auto-rows: auto;/*Linhas*/
+    grid-gap: 0;/*Distanciamento entre grids*/
+
+}
+/*Acessando img com a div apelidada de .last-articles__thumbs*/
+.last-articles__thumbs img{
+    display: block;/*Transforma em bloco*/
+    width: 100%;/*Largura*/
+}
