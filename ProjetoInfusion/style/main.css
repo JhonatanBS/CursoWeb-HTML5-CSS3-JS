@@ -244,3 +244,26 @@ Acessa o h2 e o p e aplica um efeito hover de passar a seta do mouse
 .slideshow figure{
     display: inline-block;/*Se comporta como bloco*/
 }
+/*Tag section que recebe o nome de .quote-container*/
+.quote-container{
+    background-color: #63c6ae;/*Cor de fundo*/
+    padding: 50px 0;/*Espaçamento interno*/
+    border-bottom: 12px solid #48b9a1;/*Borda na parte debaixo*/
+}
+/*Tag div que recebe o nome de .quote-slideshow e acessa o h2*/
+.quote-slideshow h2{
+    color: white;/*Cor da fonte*/
+    font-size: 30px;/*Tamanho da fonte*/
+    font-style: italic;/*Estilo itálico*/
+    font-weight: normal;/*Intensidade normal*/
+}
+/*Acessa figcaption com a tag div que recebe o nome de .quote-slideshow*/
+.quote-slideshow figcaption{
+    color: white;/*Cor de fonte*/
+    font-size: 18px;/*Tamanho da fonte*/
+    text-align: center;/*Centraliza o texto*/
+}
+/*Acessa a segunda figure*/
+.no-js .quote-slideshow figure + figure{
+    margin-top: 5em;/*Distanciamento externo*/
+}
