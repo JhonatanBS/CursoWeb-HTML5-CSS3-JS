@@ -2,7 +2,7 @@
 body{
     margin: 0;/*Distanciamento externo*/
     font-family: 'Open Sans', sans-serif;/*Fonte baixada, fonte  do HTML*/
-    line-height: 1.5;
+    line-height: 1.5;/*Espaçamento entre linhas*/
 }
 /*Tag img para imagens*/
 img{
@@ -73,7 +73,7 @@ img{
     height: 80vh;/*Altura em view port*/
     padding: 40px 20px;/*Espaçamento interno*/
     text-align: center;/*Centraliza o texto*/
-    display: flex;/**/
+    display: flex;/*Transforma em item */
     flex-direction: column;/*Transforma o objeto em coluna*/
     justify-content: center;/*Centraliza o objeto*/
     align-items: center;/*Transforma em um item e centraliza*/
@@ -116,6 +116,26 @@ img{
 .people-cards{
     margin-top: 2.5em;/*Espaçamento externo de cima*/
 }
+/*Tag article recebe o nome de .people-cards__card*/
+.people-cards__card:hover{/*Efeito de passar o mouse*/
+    outline: 5px solid #63c6ae;/*Contorno e não ocupa espaço*/
+    outline-offset: -5px;/*Distância no eixo x*/
+}
+/*
+Tag section recebe o nome de .people-cards__card
+Acessa a img e aplica um efeito de passar a seta do mouse
+*/
+.people-cards__card:hover .people-cards__avatar img{
+    transform: translateY(-50%);/*Caminha no eixo Y a imagem ou bloco*/
+}
+/*
+Tag section recebe o nome de .people-cards__card
+Acessa o h2 e o p e aplica um efeito hover de passar a seta do mouse
+*/
+.people-cards__card:hover .people-cards__title,
+.people-cards__card:hover .people-cards__text{
+    color: #63c6ae;/*Cor da fonte*/
+}
 /*Tag img recebe o nome .people-cards__image*/
 .people-cards__image{
     width: 100%;/*Largura*/
@@ -137,6 +157,7 @@ img{
 .people-cards__title{
     color: #737c85;/*Cor da fonte*/
     font-size: 21px;/*Tamanho da fonte*/
+    font-weight: normal;/*Intensidade da fonte*/
 }
 /*Tag p recebe o nome .people-cards__text*/
 .people-cards__text{
