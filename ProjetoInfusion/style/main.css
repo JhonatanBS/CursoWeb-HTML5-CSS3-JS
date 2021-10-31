@@ -64,10 +64,6 @@ img{
 .header__nav a:hover{
     color: #63c6ae;/*Cor da fonte*/
 }
-/**/
-.header__btnMenu{
-  
-}
 /*Tag section recebe o nome de .hero*/
 .hero{
     height: 80vh;/*Altura em view port*/
