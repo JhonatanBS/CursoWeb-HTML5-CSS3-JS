@@ -267,3 +267,21 @@ Acessa o h2 e o p e aplica um efeito hover de passar a seta do mouse
 .no-js .quote-slideshow figure + figure{
     margin-top: 5em;/*Distanciamento externo*/
 }
+/*Tag footer apelidado de footer*/
+.footer{
+    background-color: #242a2c;/*Cor de fundo*/
+    padding: 50px 0 250px;/*Espaçamento interno*/
+    font-size: 14px;/*Tamanho da fonte*/
+    color: #454e51;/*Cor de fonte*/
+}
+/*Acessa a li através da tag ul apelidada de .footer__links*/
+.footer__links li{
+    list-style: none;/*Remove as bolinhas ou números da lista*/
+}
+/*Acessa a tag a através da ul apelidada de .footer__links*/
+.footer__links a{
+    color: #454e51;/*Cor de fonte*/
+    display: block;/*Transforma em bloco*/
+    font-weight: 600;/*Intensidade*/
+    text-decoration: none;/*Remove a linha debaixo do link*/
+}
