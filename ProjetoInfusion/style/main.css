@@ -229,3 +229,18 @@ Acessa o h2 e o p e aplica um efeito hover de passar a seta do mouse
     display: block;/*Transforma em bloco*/
     width: 100%;/*Largura*/
 }
+/*Tag div recebe o nome de .laptop-slider*/
+.laptop-slider{
+    background-color: #242a2c;/*Cor de fundo*/
+    padding: 125px 0 100px;/*Espaçamento interno*/
+    width: 100%;/*Largura*/
+    overflow: auto;/*Coloca uma barra de rolagem  que adapta a janela do browser*/
+}
+/*Tag div recebe o nome de .slideshow*/
+.slideshow{
+    white-space: nowrap;/*Verifica a linha, neste caso, não permitirá quebra linha*/
+}
+/*Acessa a figure com a div apelidada de .slideshow*/
+.slideshow figure{
+    display: inline-block;/*Se comporta como bloco*/
+}
