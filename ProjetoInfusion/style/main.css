@@ -2,10 +2,18 @@
 body{
     margin: 0;/*Distanciamento externo*/
     font-family: 'Open Sans', sans-serif;/*Fonte baixada, fonte  do HTML*/
+    line-height: 1.5;
 }
 /*Tag img para imagens*/
 img{
     max-width: 100%;/*Define o máximo para largura*/
+}
+/*Tag div recebe o nome de container*/
+.container{
+    margin-right: auto;/*Centraliza para direita*/
+    margin-left: auto;/*Centraliza para esquerda*/
+    padding-left: 1em;/*Espaçamento interno para esquerda*/
+    padding-right: 1em;/*Espaçamento interno para direita*/
 }
 /*tag header que refere-se à cabeçalho do HTML*/
 .header{
@@ -103,4 +111,35 @@ img{
     font-size: 16px;/*Tamanho da fonte*/
     font-weight: 600;/*Especifica a intensidade da fonte*/
     text-transform: uppercase;/*Transforma do texto em letra maiúscula*/
+}
+/*Tag section recebe o nome .people-cards*/
+.people-cards{
+    margin-top: 2.5em;/*Espaçamento externo de cima*/
+}
+/*Tag img recebe o nome .people-cards__image*/
+.people-cards__image{
+    width: 100%;/*Largura*/
+}
+/*Tag div recebe o nome .people-cards__avatar*/
+.people-cards__avatar{
+    margin: -55px auto;/*Espaçamento externo*/
+    width: 88px;/*Largura*/
+    height: 88px;/*Altura*/
+    overflow: hidden;/*Corrige ou esconde o bloco ou imagem quando se sobrepoe*/
+}
+/*Tag div recebe o nome .people-cards__content*/
+.people-cards__content{
+    text-align: center;/*Centraliza o texto*/
+    padding: 40px 25px 10px;/*Espaçamento interno*/
+    border-left: 5px solid #dbe1e7;/*Borda da parte da esquerda*/
+}
+/*Tag h2 recebe o nome .people-cards__title*/
+.people-cards__title{
+    color: #737c85;/*Cor da fonte*/
+    font-size: 21px;/*Tamanho da fonte*/
+}
+/*Tag p recebe o nome .people-cards__text*/
+.people-cards__text{
+    color: #929da5;/*Cor da fonte*/
+    font-size: 14px;/*Tamanho da fonte*/
 }
