@@ -63,14 +63,16 @@ img{
 /*Tag section recebe o nome de .hero*/
 .hero{
     height: 80vh;/*Altura em view port*/
-    padding: 40px 20px;/*Espaçamento interno/
+    padding: 40px 20px;/*Espaçamento interno*/
     text-align: center;/*Centraliza o texto*/
-    background-image: url(../img/01.jpg);/*Importa a imagem e insere no HTML*/
-    background-size: cover;/*Ocupa toda a área*/
     display: flex;/**/
     flex-direction: column;/*Transforma o objeto em coluna*/
     justify-content: center;/*Centraliza o objeto*/
     align-items: center;/*Transforma em um item e centraliza*/
+    background:linear-gradient(45deg,white 50%, transparent 50%) left calc(50% + 20px) bottom no-repeat,
+               linear-gradient(-45deg,white 50%, transparent 50%) left calc(50% - 20px) bottom no-repeat,
+               url(../img/01.jpg);/*Importa a imagem e insere no HTML*/
+    background-size: 40px 40px ,40px 40px ,cover;/*Ocupa toda a área*/
 }
 /*Tag h1 apelidado de .hero__title*/
 .hero__title{
