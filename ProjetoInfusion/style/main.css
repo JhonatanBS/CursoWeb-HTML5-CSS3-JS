@@ -164,3 +164,47 @@ Acessa o h2 e o p e aplica um efeito hover de passar a seta do mouse
     color: #929da5;/*Cor da fonte*/
     font-size: 14px;/*Tamanho da fonte*/
 }
+/*Tag section recebe o nome de .content*/
+.content{
+    background-color: #f8f9f9;/*Cor de fundo*/
+    padding: 20px 0 80px;/*Espaçamento interno*/
+    border-top: 1px solid #e3e3e3;/*Borda da parte de cima do bloco ou imagem*/  
+}
+/*Acessando o h3 com a section apelidada de .content*/
+.content h3{
+    color: #737c85;/*Cor de fonte*/
+    font-size: 21px;/*Tamanho de fonte*/
+    padding-top: 40px;/*Distânciamento de cima interno*/
+    font-weight: 400;/*Instensidade da fonte*/
+}
+/*Acessando o p com a section apelidada de .content*/
+.content p{
+    color: #929da5;/*Cor de fonte*/
+    font-size: 14px;/*Tamanho de fonte*/
+    word-spacing: 3px;/*Espaçamento entre palavras*/
+}
+/*tag a recebe o nome de .button*/
+.button{
+    padding: 15px 40px;/*Distanciamento interno*/
+    border-radius: 3px;/*Arredonda as pontas do bloco ou imagem*/
+    text-decoration: none;/*Remove as linhas debaixo do link*/
+    font-weight: 600;/*Intensidade da fonte*/
+    font-size: 15px;/*Tamanho da fonte*/
+    margin-right: 15px;/*Espaçamento externo à direita*/
+    display: inline-block;/*Transforma em bloco*/
+    transition: ease .5s;/*transição de animação*/
+}
+/*tag a recebe o nome de .button*/
+.button:hover{/*Efeito hover ao passar a seta do mouse*/
+    background-color: #929da5;/*Cor de fonte*/
+}
+/*tag a recebe o nome de .button-primary*/
+.button-primary{
+    background-color: #69c6ae;/*Cor de fundo*/
+    color: white;/*Cor de fonte*/
+}
+/*tag a recebe o nome de .button-secundary*/
+.button-secundary{
+    background-color: #455357;/*Cor de fundo*/
+    color: white;/*Cor de fonte*/
+}
