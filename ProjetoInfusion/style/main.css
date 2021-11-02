@@ -79,6 +79,10 @@ img{
     border: none;/*Remove as bordas*/
     font-size: 14px;/*Tamanho da fonte*/
 }
+/*Com o javaScript acessamos a nav que está no header*/
+.js .header__nav{
+    transition: max-height 1s;/*Transição usando o max-height*/
+}
 /*Tag section recebe o nome de .hero*/
 .hero{
     height: 80vh;/*Altura em view port*/
