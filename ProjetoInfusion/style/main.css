@@ -21,6 +21,11 @@ img{
     background-color: #fff;/*Cor de fundo*/
     width: 100%;/*Largura*/
 }
+/*Se o javaScript estiver disponível aplica no header*/
+.js .header{
+    position: fixed;
+    width: 100%;   
+}
 /*tag a recebe o nome de .logo-text*/
 .logo-text{
     text-transform: uppercase;/*Transforma todas as letras em maiúsculas*/
