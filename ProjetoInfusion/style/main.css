@@ -285,3 +285,41 @@ Acessa o h2 e o p e aplica um efeito hover de passar a seta do mouse
     font-weight: 600;/*Intensidade*/
     text-decoration: none;/*Remove a linha debaixo do link*/
 }
+
+/*Media*/
+@media screen and (min-width: 1020px){/*Determina o tamanho da janela e aplica as configurações*/
+    /*tag header que refere-se à cabeçalho do HTML*/
+    .header{
+        position: fixed;/*Fixa o cabeçalho do browser, quando descer com o scroll, ele permanece fixo*/
+    }
+    /*tag a recebe o nome de .logo-text*/
+    .logo-text{
+        width: 25%;/*Larfura*/
+        box-sizing: border-box;/*Corrige a soma que o padding faz com o bloco*/
+    }
+    /*Tag buttom recebe o nome .header__btnMenu*/
+    .header__btnMenu{
+        display: none;/*Tira as configurações do display*/
+    }
+    /*tag nav recebe o nome de .header__nav*/
+    .header__nav{
+        float: left;/*Flutua para esquerda*/
+        width: 75%;/*Largura*/
+        clear: none;/*Remove as configurações do clear*/
+        max-width: 800px;/*Determina o tamanho máximo*/
+    }
+    /*Acessa a ul(lista não-ordenada) com o apelido dado para a nav*/
+    .header__nav ul{
+        display: flex;/*Estrutura dimensional de bloco*/
+        justify-content: space-around;/*Distribui o espaçamento exato entre os elementos da lista*/
+    }
+    /*Acessa li(lista) com o apelido dado a nav*/
+    .header__nav li{
+        border-bottom: none;/*Remove as linhas abaixo*/
+        flex-grow: 1;/*Distanciamento do flex*/
+    }
+    /*Acessa a(link) com apelido dado a nav*/
+    .header__nav a{
+        background-color: white;/*Cor de fundo*/
+    }
+}
