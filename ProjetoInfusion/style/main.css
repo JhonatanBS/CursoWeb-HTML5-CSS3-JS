@@ -336,4 +336,8 @@ Acessa o h2 e o p e aplica um efeito hover de passar a seta do mouse
         grid-template-columns: 1fr 1fr;/*Determina a quantidade de colunas e seu tamanho*/
         grid-gap: 30px;/*Distanciamento das colunas*/
     }
+    /*Tag div recebe o nome de .last-articles__thumbs*/
+    .last-articles__thumbs{
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
