@@ -14,6 +14,7 @@ img{
     margin-left: auto;/*Centraliza para esquerda*/
     padding-left: 1em;/*Espaçamento interno para esquerda*/
     padding-right: 1em;/*Espaçamento interno para direita*/
+    max-width: 980px;/*Determina um tamanho máximo*/
 }
 /*tag header que refere-se à cabeçalho do HTML*/
 .header{
@@ -321,5 +322,11 @@ Acessa o h2 e o p e aplica um efeito hover de passar a seta do mouse
     /*Acessa a(link) com apelido dado a nav*/
     .header__nav a{
         background-color: white;/*Cor de fundo*/
+    }
+    /*Tag section recebe o nome .people-cards*/
+    .people-cards{
+        display: grid;/*Estrutura bidimensional*/
+        grid-template-columns: repeat(4, 1fr);/*Determina a quantidade de colunas e o seu tamanho*/
+        grid-gap: 1;/*Espaçamento de entre as colunas*/
     }
 }
