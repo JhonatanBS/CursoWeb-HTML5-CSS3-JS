@@ -33,6 +33,7 @@ img{
     color: #fff;/*Cor de fonte*/
     font-weight: bold;/*Negrito*/
     float: left;/*Flutua para esquerda*/
+    text-align: right;/*Alinhamento de texto para à direita*/
 }
 /*tag nav recebe o nome de .header__nav*/
 .header__nav{
@@ -328,5 +329,11 @@ Acessa o h2 e o p e aplica um efeito hover de passar a seta do mouse
         display: grid;/*Estrutura bidimensional*/
         grid-template-columns: repeat(4, 1fr);/*Determina a quantidade de colunas e o seu tamanho*/
         grid-gap: 1;/*Espaçamento de entre as colunas*/
+    }
+    /*Acessa a div que está dentro de uma section(.content)*/
+    .content .container{
+        display: grid;/*Estrutura bidimensional*/
+        grid-template-columns: 1fr 1fr;/*Determina a quantidade de colunas e seu tamanho*/
+        grid-gap: 30px;/*Distanciamento das colunas*/
     }
 }
