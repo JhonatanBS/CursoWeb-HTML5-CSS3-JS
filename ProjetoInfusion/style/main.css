@@ -71,6 +71,14 @@ img{
 .header__nav a:hover{
     color: #63c6ae;/*Cor da fonte*/
 }
+/*Tag buttom recebe o nome de .header__btnMenu*/
+.header__btnMenu{
+    float: right;/*Flutua para direita*/
+    margin: 1.5em;/*Espaçamento externo*/
+    background-color: transparent;/*Cor de fundo*/
+    border: none;/*Remove as bordas*/
+    font-size: 14px;/*Tamanho da fonte*/
+}
 /*Tag section recebe o nome de .hero*/
 .hero{
     height: 80vh;/*Altura em view port*/
