@@ -287,7 +287,10 @@ Acessa o h2 e o p e aplica um efeito hover de passar a seta do mouse
     font-weight: 600;/*Intensidade*/
     text-decoration: none;/*Remove a linha debaixo do link*/
 }
-
+/*Tag h2 recebe o apelido de .footer__logo*/
+.footer__logo{
+    text-transform: uppercase;/*Atualiza as letras para maiúsculas*/
+}
 /*Media*/
 @media screen and (min-width: 1020px){/*Determina o tamanho da janela e aplica as configurações*/
     /*tag header que refere-se à cabeçalho do HTML*/
@@ -339,5 +342,13 @@ Acessa o h2 e o p e aplica um efeito hover de passar a seta do mouse
     /*Tag div recebe o nome de .last-articles__thumbs*/
     .last-articles__thumbs{
         grid-template-columns: repeat(6, 1fr);
+    }
+    /*Acessando a div com o footer*/
+    .footer .container{
+        display: flex;/*Estrutura dimensional*/
+    }
+    /*Acessando os filhos da div com o footer*/
+    .footer .container > *{
+        margin: 1.5em;/*Distancimento externo*/
     }
 }
