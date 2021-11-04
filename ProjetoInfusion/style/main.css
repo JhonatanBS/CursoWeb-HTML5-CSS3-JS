@@ -309,7 +309,7 @@ Acessa o h2 e o p e aplica um efeito hover de passar a seta do mouse
     text-transform: uppercase;/*Atualiza as letras para maiúsculas*/
 }
 /*Media*/
-@media screen and (min-width: 1020px){/*Determina o tamanho da janela e aplica as configurações*/
+@media screen and (min-width: 1025px){/*Determina o tamanho da janela e aplica as configurações*/
     /*tag header que refere-se à cabeçalho do HTML*/
     .header{
         position: fixed;/*Fixa o cabeçalho do browser, quando descer com o scroll, ele permanece fixo*/
