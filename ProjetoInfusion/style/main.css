@@ -1,371 +1,455 @@
-/*tag body que refere-se ao corpo do HTML*/
 body{
-    margin: 0;/*Distanciamento externo*/
-    font-family: 'Open Sans', sans-serif;/*Fonte baixada, fonte  do HTML*/
-    line-height: 1.5;/*Espaçamento entre linhas*/
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
 }
-/*Tag img para imagens*/
+
 img{
-    max-width: 100%;/*Define o máximo para largura*/
+    max-width: 100%;
 }
-/*Tag div recebe o nome de container*/
 .container{
-    margin-right: auto;/*Centraliza para direita*/
-    margin-left: auto;/*Centraliza para esquerda*/
-    padding-left: 1em;/*Espaçamento interno para esquerda*/
-    padding-right: 1em;/*Espaçamento interno para direita*/
-    max-width: 980px;/*Determina um tamanho máximo*/
+    margin-right: auto;    
+    margin-left: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 980px;
 }
-/*tag header que refere-se à cabeçalho do HTML*/
+
 .header{
-    background-color: #fff;/*Cor de fundo*/
-    width: 100%;/*Largura*/
+    background: #fff;
+    width: 100%;
 }
-/*Se o javaScript estiver disponível aplica no header*/
+
 .js .header{
     position: fixed;
-    width: 100%;   
+    width: 100%;
+    z-index: 10;
 }
-/*tag a recebe o nome de .logo-text*/
+
 .logo-text{
-    text-transform: uppercase;/*Transforma todas as letras em maiúsculas*/
-    background-color: #63c6ae;/*Cor de fundo*/
-    font-size: 24px;/*Tamanho da fonte*/
-    margin: 0;/*Distanciamento externo*/
-    padding: 20px;/*Espaçamento interno*/
-    display: block;/*Transforma em bloco*/
-    text-decoration: none;/*Remove a linha que fica em baixo do link*/
-    color: #fff;/*Cor de fonte*/
-    font-weight: bold;/*Negrito*/
-    float: left;/*Flutua para esquerda*/
-    text-align: right;/*Alinhamento de texto para à direita*/
+    text-transform: uppercase;
+    background-color: #63c6ae;
+    font-size: 24px;
+    margin: 0;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    float: left;
+    text-align: right;
 }
-/*tag nav recebe o nome de .header__nav*/
+
 .header__nav{
-    clear: left;/*Corrige ou limpar para esquerda*/
+    clear: left;
 }
-/*Acessa a ul(lista não-ordenada) com o apelido dado para a nav*/
 .header__nav ul{
-    margin: 0;/*Distanciamento externo*/
-    padding: 0;/*Distanciamento interno*/
+    margin: 0;
+    padding: 0;
 }
-/*Acessa li(lista) com o apelido dado a nav*/
-.header__nav li{
-    list-style-type: none;/*Remove as bolinhas da lista*/
-    background-color: #242c2c;/*Cor de fundo*/
-    text-align: center;/*Centraliza o texto*/
-    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);/*Borda da parte de baixo*/
+.header__nav li {
+    list-style-type: none;
+    background: #242c2c;
+    text-align: center;
+    border-bottom: 1px dotted rgba(255,255,255, 0.2);
 }
-/*Acessa a(link) com apelido dado a nav*/
-.header__nav a{
-    text-decoration: none;/*Remove as linhas debaixo do link*/
-    text-transform: uppercase;/*Transforma as letras em maiúsculas*/
-    color: #586165;/*Cor do texto*/
-    font-size: 14px;/*Tamanho da fonte*/
-    font-weight: 600;/*Intensidade da fonte*/
-    display: block;/*Transforma em bloco*/
-    padding: 25px 0;/*Distanciamento interno*/
-    transition: .8s ease;/*Transição de efeito ao passar a seta do mouse*/
+.header__nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #586165;
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    padding: 25px 0;
+    transition: .8s ease;
 }
-/*Tag com efeito hover, que permite gerar um efeito ao passar a seta do mouse*/
-.header__nav a:hover{
-    color: #63c6ae;/*Cor da fonte*/
+.header__nav a:hover {
+    color: #63c6ae;   
 }
-/*Tag buttom recebe o nome de .header__btnMenu*/
 .header__btnMenu{
-    float: right;/*Flutua para direita*/
-    margin: 1.5em;/*Espaçamento externo*/
-    background-color: transparent;/*Cor de fundo*/
-    border: none;/*Remove as bordas*/
-    font-size: 14px;/*Tamanho da fonte*/
+    float: right;
+    margin: 1.5em;
+    background: transparent;
+    border: none;
+    font-size: 14px;
 }
-/*Com o javaScript acessamos a nav que está no header*/
+
 .js .header__nav{
-    transition: max-height 1s;/*Transição usando o max-height*/
+    transition: max-height 1s;
 }
-/*Tag section recebe o nome de .hero*/
+
+.js .laptop-slider{
+    overflow: hidden;
+    color: white;
+}
+.js .laptop-slider .slideshow{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+}
+.js .laptop-slider figure{
+    opacity: 0;
+    transition: 1s opacity;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.js .laptop-slider figure.show{
+    opacity: 1;
+    position: static;
+    
+}
+.js .laptop-slider .prev, .js .laptop-slider .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.js .laptop-slider .prev{
+    left: 10px;
+}
+.js .laptop-slider .next{
+    right: 10px;
+}
+
+
+
+
+
+.js .quote-slideshow{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+    box-sizing: border-box;
+    padding: 0 50px;
+    color: white;
+}
+.js .quote-slideshow figure h2{
+    margin-top: 0;
+}
+.js .quote-slideshow figure{
+    opacity: 0;
+    transition: 1s opacity;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 50px;
+    box-sizing: border-box;
+    margin: 0;
+}
+.js .quote-slideshow figure.show{
+    opacity: 1;
+    position: static;
+    
+}
+.js .quote-slideshow .prev, .js .quote-slideshow .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.js .quote-slideshow .prev{
+    left: 10px;
+}
+.js .quote-slideshow .next{
+    right: 10px;
+}
+
+
 .hero{
-    height: 80vh;/*Altura em view port*/
-    padding: 40px 20px;/*Espaçamento interno*/
-    text-align: center;/*Centraliza o texto*/
-    display: flex;/*Transforma em item */
-    flex-direction: column;/*Transforma o objeto em coluna*/
-    justify-content: center;/*Centraliza o objeto*/
-    align-items: center;/*Transforma em um item e centraliza*/
-    background:linear-gradient(45deg,white 50%, transparent 50%) left calc(50% + 20px) bottom no-repeat,
-               linear-gradient(-45deg,white 50%, transparent 50%) left calc(50% - 20px) bottom no-repeat,
-               url(../img/01.jpg);/*Importa a imagem e insere no HTML*/
-    background-size: 40px 40px ,40px 40px ,cover;/*Ocupa toda a área*/
+    height: 80vh;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background: linear-gradient(45deg, white 50%, transparent 50%) left calc(50% + 20px) bottom no-repeat, 
+                linear-gradient(-45deg, white 50%, transparent 50%) left calc(50% - 20px) bottom no-repeat, 
+                url(../img/01.jpg);
+    background-size: 40px 40px, 40px 40px, cover;
 }
-/*Tag h1 apelidado de .hero__title*/
+
 .hero__title{
-    background-color: #63c6ae;/*Cor de fundo*/
-    color: white;/*Cor de fonte*/
-    font-size: 28px;/*Tamanho da fonte*/
-    font-weight: 600;/*Especifica a intensidade da fonte*/
-    padding: 30px 20px;/*Espaçamento interno*/
-    text-transform: uppercase;/*Transforma do texto em letra maiúscula*/
+    background-color: #63c6ae;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 30px 20px;
+    text-transform: uppercase;
 }
-/*Tag p apelidado de .hero__text*/
+
 .hero__text{
-    background-color: #242a2c;/*Cor de fundo*/
-    margin: 5px 30px 35px;/*Espaçamento externo*/
-    color: white;/*Cor de fonte*/
-    padding: 20px;/*Espaçamento interno*/
-    font-size: 16px;/*Tamanho da fonte*/
+    background-color: #242a2c;
+    margin: 5px 30px 35px;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
 }
-/*tag a recebe o nome de .hero__btn*/
+
 .hero__btn{
-    border: 1px solid rgba(255, 255, 255, .3);/*Borda do bloco: tamanho modo cor*/
-    background-color: rgba(0, 0, 0, .2);/*Cor de fundo*/
-    border-radius: 5px;/*Arredonda as laterais do bloco*/
-    padding: 15px 25px;/*Espaçamento interno*/
-    display: inline-block;/*Transforma em bloco*/
-    color: white;/*Cor da fonte*/
-    text-decoration: none;/*Remove a parte debaixo do link*/
-    font-size: 16px;/*Tamanho da fonte*/
-    font-weight: 600;/*Especifica a intensidade da fonte*/
-    text-transform: uppercase;/*Transforma do texto em letra maiúscula*/
+    border: 1px solid rgba(255,255,255,.3);
+    background-color: rgba(0,0,0,.2);
+    border-radius: 5px;
+    padding: 15px 25px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
-/*Tag section recebe o nome .people-cards*/
+
+
+
+
 .people-cards{
-    margin-top: 2.5em;/*Espaçamento externo de cima*/
+    margin-top: 2.5em;
 }
-/*Tag article recebe o nome de .people-cards__card*/
-.people-cards__card:hover{/*Efeito de passar o mouse*/
-    outline: 5px solid #63c6ae;/*Contorno e não ocupa espaço*/
-    outline-offset: -5px;/*Distância no eixo x*/
+
+.people-cards__card{
+    
 }
-/*
-Tag section recebe o nome de .people-cards__card
-Acessa a img e aplica um efeito de passar a seta do mouse
-*/
+.people-cards__card:hover{
+    outline: 5px solid #63c6ae;
+    outline-offset: -5px;
+}
 .people-cards__card:hover .people-cards__avatar img{
-    transform: translateY(-50%);/*Caminha no eixo Y a imagem ou bloco*/
+    transform: translateY(-50%);
 }
-/*
-Tag section recebe o nome de .people-cards__card
-Acessa o h2 e o p e aplica um efeito hover de passar a seta do mouse
-*/
 .people-cards__card:hover .people-cards__title,
 .people-cards__card:hover .people-cards__text{
-    color: #63c6ae;/*Cor da fonte*/
+    color: #63c6ae;
 }
-/*Tag img recebe o nome .people-cards__image*/
-.people-cards__image{
-    width: 100%;/*Largura*/
-}
-/*Tag div recebe o nome .people-cards__avatar*/
-.people-cards__avatar{
-    margin: -55px auto;/*Espaçamento externo*/
-    width: 88px;/*Largura*/
-    height: 88px;/*Altura*/
-    overflow: hidden;/*Corrige ou esconde o bloco ou imagem quando se sobrepoe*/
-}
-/*Tag div recebe o nome .people-cards__content*/
-.people-cards__content{
-    text-align: center;/*Centraliza o texto*/
-    padding: 40px 25px 10px;/*Espaçamento interno*/
-    border-left: 5px solid #dbe1e7;/*Borda da parte da esquerda*/
-}
-/*Tag h2 recebe o nome .people-cards__title*/
-.people-cards__title{
-    color: #737c85;/*Cor da fonte*/
-    font-size: 21px;/*Tamanho da fonte*/
-    font-weight: normal;/*Intensidade da fonte*/
-}
-/*Tag p recebe o nome .people-cards__text*/
-.people-cards__text{
-    color: #929da5;/*Cor da fonte*/
-    font-size: 14px;/*Tamanho da fonte*/
-}
-/*Tag section recebe o nome de .content*/
-.content{
-    background-color: #f8f9f9;/*Cor de fundo*/
-    padding: 20px 0 80px;/*Espaçamento interno*/
-    border-top: 1px solid #e3e3e3;/*Borda da parte de cima do bloco ou imagem*/  
-}
-/*Acessando o h3 com a section apelidada de .content*/
-.content h3{
-    color: #737c85;/*Cor de fonte*/
-    font-size: 21px;/*Tamanho de fonte*/
-    padding-top: 40px;/*Distânciamento de cima interno*/
-    font-weight: 400;/*Instensidade da fonte*/
-}
-/*Acessando o p com a section apelidada de .content*/
-.content p{
-    color: #929da5;/*Cor de fonte*/
-    font-size: 14px;/*Tamanho de fonte*/
-    word-spacing: 3px;/*Espaçamento entre palavras*/
-}
-/*tag a recebe o nome de .button*/
-.button{
-    padding: 15px 40px;/*Distanciamento interno*/
-    border-radius: 3px;/*Arredonda as pontas do bloco ou imagem*/
-    text-decoration: none;/*Remove as linhas debaixo do link*/
-    font-weight: 600;/*Intensidade da fonte*/
-    font-size: 15px;/*Tamanho da fonte*/
-    margin-right: 15px;/*Espaçamento externo à direita*/
-    display: inline-block;/*Transforma em bloco*/
-    transition: ease .5s;/*transição de animação*/
-}
-/*tag a recebe o nome de .button*/
-.button:hover{/*Efeito hover ao passar a seta do mouse*/
-    background-color: #929da5;/*Cor de fonte*/
-}
-/*tag a recebe o nome de .button-primary*/
-.button-primary{
-    background-color: #69c6ae;/*Cor de fundo*/
-    color: white;/*Cor de fonte*/
-}
-/*tag a recebe o nome de .button-secundary*/
-.button-secundary{
-    background-color: #455357;/*Cor de fundo*/
-    color: white;/*Cor de fonte*/
-}
-/*Tag div recebe o nome de .last-articles__title*/
-.last-articles__title{
-    background-color: #63c6ae;/*Cor de fundo*/
-    padding: 5px 0;/*Espaçamento interno*/
-}
-/*Acessando h2 com a div apelidada de .last-articles__title*/
-.last-articles__title h2{
-    font-size: 24px;/*Tamanho da fonte*/
-    color: white;/*Cor da fonte*/
-    text-transform: uppercase;/*Transforma todo texto em letras maiúsculas*/
-    font-weight: 400;/*Intensidade da fonte*/
-}
-/*Tag div recebe o nome de .last-articles__thumbs*/
-.last-articles__thumbs{
-    display: grid;/*Sistema bidemensional de grid*/
-    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));/*Colunas: repete*/
-    grid-auto-rows: auto;/*Linhas*/
-    grid-gap: 0;/*Distanciamento entre grids*/
 
+.people-cards__image{
+    width: 100%;
 }
-/*Acessando img com a div apelidada de .last-articles__thumbs*/
+
+.people-cards__avatar{
+    margin: -55px auto;
+    width: 88px;
+    height: 88px;
+    overflow: hidden;
+}
+.people-cards__content{
+    text-align: center;
+    padding: 40px 25px 10px;
+    border-left: 1px solid #dbe1e7;
+}
+.people-cards__title{
+    color: #737c85;
+    font-size: 21px;
+    font-weight: normal;
+}
+.people-cards__text{
+    color: #929da5;
+    font-size: 14px;    
+}
+
+
+
+.content{
+    background: #f8f9f9;
+    padding: 20px 0 80px;
+    border-top: 1px solid #e3e3e3;
+}
+
+.content h3{
+    color: #737c85;
+    font-size: 21px;
+    padding-top: 40px;
+    font-weight: 400;
+}
+.content p{
+    color: #929da5;
+    font-size: 14px;
+    word-spacing: 3px;
+}
+.button{
+    padding: 15px 40px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    transition: background .5s;
+}
+.button:hover{
+    background-color: #929da5;
+}
+.button-primary{
+    background-color: #69c6ae;
+    color: white;
+}
+.button-secundary{
+    background-color: #455357;
+    color: white;
+}
+
+
+
+.last-articles__title{
+    background-color: #63c6ae;
+    padding: 5px 0;
+}
+
+.last-articles__title h2{
+    font-size: 24px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.last-articles__thumbs{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 0;
+    background: yellow;
+}
 .last-articles__thumbs img{
-    display: block;/*Transforma em bloco*/
-    width: 100%;/*Largura*/
+    display: block;
+    width: 100%;
 }
-/*Tag div recebe o nome de .laptop-slider*/
+
+
 .laptop-slider{
-    background-color: #242a2c;/*Cor de fundo*/
-    padding: 125px 0 100px;/*Espaçamento interno*/
-    width: 100%;/*Largura*/
-    overflow: auto;/*Coloca uma barra de rolagem  que adapta a janela do browser*/
+    background-color: #242a2c;
+    padding: 125px 0 100px;
+    width: 100%;
+    overflow: auto;
 }
-/*Tag div recebe o nome de .slideshow*/
+
 .slideshow{
-    white-space: nowrap;/*Verifica a linha, neste caso, não permitirá quebra linha*/
+    white-space: nowrap;
 }
-/*Acessa a figure com a div apelidada de .slideshow*/
 .slideshow figure{
-    display: inline-block;/*Se comporta como bloco*/
+    display: inline-block;
 }
-/*Tag section que recebe o nome de .quote-container*/
+
+
+
+
 .quote-container{
-    background-color: #63c6ae;/*Cor de fundo*/
-    padding: 50px 0;/*Espaçamento interno*/
-    border-bottom: 12px solid #48b9a1;/*Borda na parte debaixo*/
+    background-color: #63c6ae;
+    padding: 50px 0;
+    border-bottom: 12px solid #48b9a1;
 }
-/*Tag div que recebe o nome de .quote-slideshow e acessa o h2*/
+
 .quote-slideshow h2{
-    color: white;/*Cor da fonte*/
-    font-size: 30px;/*Tamanho da fonte*/
-    font-style: italic;/*Estilo itálico*/
-    font-weight: normal;/*Intensidade normal*/
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: normal;
 }
-/*Acessa figcaption com a tag div que recebe o nome de .quote-slideshow*/
+
 .quote-slideshow figcaption{
-    color: white;/*Cor de fonte*/
-    font-size: 18px;/*Tamanho da fonte*/
-    text-align: center;/*Centraliza o texto*/
+    color: white;
+    font-size: 18px;
+    text-align: center;
 }
-/*Acessa a segunda figure*/
+
 .no-js .quote-slideshow figure + figure{
-    margin-top: 5em;/*Distanciamento externo*/
+    margin-top: 5em;
 }
-/*Tag footer apelidado de footer*/
+
+
 .footer{
-    background-color: #242a2c;/*Cor de fundo*/
-    padding: 50px 0 250px;/*Espaçamento interno*/
-    font-size: 14px;/*Tamanho da fonte*/
-    color: #454e51;/*Cor de fonte*/
+    background-color: #242a2c;
+    padding: 50px 0 250px;
+    color: #454e51;
+    font-size: 14px;
 }
-/*Acessa a li através da tag ul apelidada de .footer__links*/
+
 .footer__links li{
-    list-style: none;/*Remove as bolinhas ou números da lista*/
+    list-style: none;
 }
-/*Acessa a tag a através da ul apelidada de .footer__links*/
 .footer__links a{
-    color: #454e51;/*Cor de fonte*/
-    display: block;/*Transforma em bloco*/
-    font-weight: 600;/*Intensidade*/
-    text-decoration: none;/*Remove a linha debaixo do link*/
+    color: #454e51;
+    display: block;
+    font-weight: 600;
+    text-decoration: none;
 }
-/*Tag h2 recebe o apelido de .footer__logo*/
+
 .footer__logo{
-    text-transform: uppercase;/*Atualiza as letras para maiúsculas*/
+    text-transform: uppercase;
 }
-/*Media*/
-@media screen and (min-width: 1025px){/*Determina o tamanho da janela e aplica as configurações*/
-    /*tag header que refere-se à cabeçalho do HTML*/
+
+@media screen and (min-width: 1024px){
     .header{
-        position: fixed;/*Fixa o cabeçalho do browser, quando descer com o scroll, ele permanece fixo*/
+        position: fixed;
     }
-    /*tag a recebe o nome de .logo-text*/
+    
     .logo-text{
-        width: 25%;/*Larfura*/
-        box-sizing: border-box;/*Corrige a soma que o padding faz com o bloco*/
+        width: 25%;
+        box-sizing: border-box;
     }
-    /*Tag buttom recebe o nome .header__btnMenu*/
+    
     .header__btnMenu{
-        display: none;/*Tira as configurações do display*/
+        display: none;
     }
-    /*tag nav recebe o nome de .header__nav*/
+    
     .header__nav{
-        float: left;/*Flutua para esquerda*/
-        width: 75%;/*Largura*/
-        clear: none;/*Remove as configurações do clear*/
-        max-width: 800px;/*Determina o tamanho máximo*/
+        float: left;
+        width: 75%;
+        clear: none;
+        max-width: 800px;
     }
-    /*Acessa a ul(lista não-ordenada) com o apelido dado para a nav*/
+    
     .header__nav ul{
-        display: flex;/*Estrutura dimensional de bloco*/
-        justify-content: space-around;/*Distribui o espaçamento exato entre os elementos da lista*/
+        display: flex;
+        justify-content: space-around;
     }
-    /*Acessa li(lista) com o apelido dado a nav*/
-    .header__nav li{
-        border-bottom: none;/*Remove as linhas abaixo*/
-        flex-grow: 1;/*Distanciamento do flex*/
+    
+    .header__nav li {
+        border-bottom: none;
+        flex-grow: 1;
     }
-    /*Acessa a(link) com apelido dado a nav*/
+    
     .header__nav a{
-        background-color: white;/*Cor de fundo*/
+        background: white;        
     }
-    /*Tag section recebe o nome .people-cards*/
+    
+    
     .people-cards{
-        display: grid;/*Estrutura bidimensional*/
-        grid-template-columns: repeat(4, 1fr);/*Determina a quantidade de colunas e o seu tamanho*/
-        grid-gap: 1;/*Espaçamento de entre as colunas*/
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 30px;
     }
-    /*Acessa a div que está dentro de uma section(.content)*/
+    
+    
     .content .container{
-        display: grid;/*Estrutura bidimensional*/
-        grid-template-columns: 1fr 1fr;/*Determina a quantidade de colunas e seu tamanho*/
-        grid-gap: 30px;/*Distanciamento das colunas*/
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
     }
-    /*Tag div recebe o nome de .last-articles__thumbs*/
+    
     .last-articles__thumbs{
         grid-template-columns: repeat(6, 1fr);
     }
-    /*Acessando a div com o footer*/
+    
     .footer .container{
-        display: flex;/*Estrutura dimensional*/
+        display: flex;
     }
-    /*Acessando os filhos da div com o footer*/
-    .footer .container > *{
-        margin: 1.5em;/*Distancimento externo*/
+    .footer .container > * {
+        margin: 1.5em;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
