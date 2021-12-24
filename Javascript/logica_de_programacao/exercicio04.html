@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+</head>
+<body>
+    
+    <h1>Exercício 04</h1>
+    <script>
+        //pedir para o usuario digitar um numero               
+        //converter em numero inteiro                       
+        //pedir para o usuario digitar outro numero           
+        //converter em numero inteiro  
+        
+        //Fazer a média das notas e mostrar se o aluno foi aprovado ou reprovado.
+        // Nota de corte 5
+        var numero2;
+        var numero2;
+       // do{
+        for(let i = 0; i < 1;){
+             numero1 = parseInt(prompt("Digite o primeiro número:"));
+             numero2 = parseInt(prompt("Digite o segundo número:"));
+
+             if(numero1 >= 0 && numero1 <= 10 && numero2 >= 0 && numero2 <= 10){
+                 i++;
+             }
+             else{
+                 alert("Digite uma nota válida entre 0 e 10");
+             }
+             
+        }
+        //}while(numero1 < 0 && numero1 > 10 || numero2 < 0 && numero2 > 10);
+
+       
+        
+
+        const media = (numero1 + numero2) / 2;
+        
+        if(media >= 5){
+            alert("O aluno foi aprovado!");
+        }
+        else{
+            alert("O aluno foi reprovado!");
+        }
+    </script>
+</body>
+</html>
