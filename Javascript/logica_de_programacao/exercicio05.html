@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 05</title>
+</head>
+<body>
+    
+    <h1>Exercício 05</h1>
+    <script>
+    /*
+    Dois jogadores devem digitar valores diferentes, se for igual
+    aparecerá a mensagem "empate", se não for, haverá um sorteio entre 0 e 1,
+    se for 0, quem digitou o menor número ganha, se for 1, quem digitou o maior número
+    ganha.
+    */
+     var jogador1 = Number(prompt("Digite qualquer valor"));
+     var jogador2 = Number(prompt("Digite qualquer valor"));
+     const min = 0;
+     const max = 1;
+     
+     if(jogador1 === jogador2){
+         alert("Empate");
+     }
+     else if(parseInt(Math.random() * 2) === 1){
+        access =
+            jogador1 > jogador2 ?
+            alert("O jogador 1 ganhou porque tem o maior número.") : 
+            alert("O jogador 2 ganhou porque tem o maior número.");
+        
+     }
+     else if(parseInt(Math.random() * 2) === 0){
+        access =
+            jogador1 < jogador2 ?
+            alert("O jogador 1 ganhou porque tem o menor número.") : 
+            alert("O jogador 2 ganhou porque tem o menor número.");
+    }
+    </script>
+</body>
+</html>
