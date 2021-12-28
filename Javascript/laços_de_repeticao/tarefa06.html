@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa 06</title>
+    <style>
+        button{
+            height: 50px;
+            width: 100px;
+            font-size: 30px;
+        }
+
+        .clear, .insert{
+            height: 50px;
+            width: 100px;
+        }
+
+        .output{
+            font-size: 50px;
+            height: 50px;
+            width: 407px;
+            border: 2px solid black;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pedir para o usuário digitar um número 
+        e mostrar a soma,subtração,divisão e multiplicação.
+    </h1>
+    <button type="button" class="soma">+</button>
+    <button type="button" class="subtração">-</button>
+    <button type="button" class="multiplicação">*</button>
+    <button type="button" class="divisão">/</button>
+    <div class="output"></div>
+    <button type="button" class="clear">Clear</button>
+    <button type="button" class="insert">Insert</button>
+    <script>
+          var saida = document.querySelector(".output");
+          const soma = document.querySelector(".soma");
+          const subtracao = document.querySelector(".subtração");
+          const divisao = document.querySelector(".divisão");
+          const multiplicacao = document.querySelector(".multiplicação");
+          const limpar = document.querySelector(".clear");
+          const inserir = document.querySelector(".insert");
+          
+          limpar.addEventListener("click", () =>{
+             saida.innerHTML = "";
+          });
+
+          inserir.addEventListener("click", () =>{
+             var dado = Number(prompt("Digite o valor:"));
+             saida.innerHTML += dado;
+          });
+
+          soma.addEventListener("click", () =>{
+             var numero = Number(prompt("Digite o valor para a soma:"));
+             var somar = Number(saida.innerHTML) + numero;
+             saida.innerHTML = somar;
+          });
+
+          subtracao.addEventListener("click", () =>{
+             var numero = Number(prompt("Digite o valor para a soma:"));
+             var somar = Number(saida.innerHTML) - numero;
+             saida.innerHTML = somar;
+          });
+
+          multiplicacao.addEventListener("click", () =>{
+             var numero = Number(prompt("Digite o valor para a soma:"));
+             var somar = Number(saida.innerHTML) * numero;
+             saida.innerHTML = somar;
+          });
+
+          divisao.addEventListener("click", () =>{
+             var numero = Number(prompt("Digite o valor para a soma:"));
+             var somar = Number(saida.innerHTML) / numero;
+             saida.innerHTML = somar;
+          });
+    </script>
+</body>
+</html>
