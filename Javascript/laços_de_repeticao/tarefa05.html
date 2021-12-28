@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa 05</title>
+</head>
+<body>
+    <h1>Pedir para o usuário digitar um número e mostrar a tabuada de 1 até 1000.
+        E o usuário poderá limpar a tabuada e inserir outra tabuada.
+    </h1>
+    <button type="button" class="btn-insere">Inserir</button>
+    <button type="button" class="btn-limpa">Limpar</button>
+    <div class="output"></div>
+    <script>
+          var saida = document.querySelector(".output");
+          const insere = document.querySelector(".btn-insere");
+          const limpa = document.querySelector(".btn-limpa");
+          
+          limpa.addEventListener("click", () =>{
+             saida.innerHTML = "";
+          });
+
+          insere.addEventListener("click", () =>{
+            var numero = parseInt(prompt("Digite qualquer número:"));
+            var j = 1;
+            saida.innerHTML += "<hr>";
+            for(let i = 1; i<= 1000; i++){
+               saida.innerHTML += numero + " * " + i + " = " + numero * i + "<br>";
+                     if(i === j * 10){
+                         saida.innerHTML += "<hr>";
+                         j++;
+                      }
+            }
+          });
+    </script>
+</body>
+</html>
