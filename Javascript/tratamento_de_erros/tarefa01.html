@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa 01</title>
+    <style>
+        .retangulo{
+            margin: 0 auto;
+        }
+        .calculo{
+            text-align: center;
+        }
+        .btn{
+            display: block;
+            height: 50px;
+            width: 100px;
+            text-transform: uppercase;
+            font-size: 20px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pedir para o usuário digitar dois números que representam os lados
+        de um retângulo assim que a página é carregada. Mostrar na tela a área
+        total quando clicar num botão. O que acontece se o usúario digitar um dado inválido?
+    </h1>
+    <div class="retangulo"></div>
+    <div class="area"></div>
+    <div class="calculo"></div>
+    <button type="button" class="btn">Área</button>
+    <script>
+            const altura = (prompt("Digite a altura do retângulo:"));
+            const base = (prompt("Digite a base do retângulo:"));
+
+         try{
+            if(calculo){
+                Number(calculo);
+            }
+         }catch(e){
+            console.log(`Deu erro no seu sistema, o erro é:\n\n ${e}`);
+         }
+
+         const retangulo = document.querySelector(".retangulo");
+         const area = document.querySelector(".area");
+         const btn = document.querySelector(".btn");
+         const calculo = document.querySelector(".calculo");
+
+         retangulo.style.height = altura + "px";
+         retangulo.style.width = base + "px";
+         retangulo.style.backgroundColor = "red";
+
+        btn.addEventListener("click", () =>{
+           calculo.innerHTML = "base x altura = " + base * altura;
+        });
+    </script>
+</body>
+</html>
