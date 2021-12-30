@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 03</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>
+        Mostrar na tela os dados de produtos, contendo quantidade de estoque e 
+        preço. Estes dados devem estar agrupados em um array de objetos.
+    </h1>
+    <h2>Array de objetos</h2>
+    <div></div>
+    <script>
+      const saida = document.querySelector("div");
+      const produto = [
+            {nome: "televisão",preco: 1500},
+            {nome: "video game",preco: 4500},
+            {nome: "computador",preco: 5500},
+      ];
+      
+      for(let i = 0; i < produto.length; i++){
+         Object.defineProperty(produto[i], "estoque",{
+          value: 100,
+          configurable: false,
+          writable: false,
+          enumerable: false
+         });
+         saida.innerHTML += produto[i].nome + " , " + produto[i].preco + " , " + produto[i].estoque
+          + "<br>";
+       }  
+
+      //   produto.estoque = 200;
+      //   console.log(produto.estoque)
+    </script>
+</body>
+</html>
