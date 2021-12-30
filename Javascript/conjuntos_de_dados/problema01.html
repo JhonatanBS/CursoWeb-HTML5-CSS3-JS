@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 01</title>
+    <style>
+      ul{
+          height: 100px;
+          width: 100px;
+          text-transform: uppercase;
+      }
+      li{
+          list-style-type: none;
+      }
+    </style>
+</head>
+<body>
+    <h1>Mostrar na tela todos os produtos disponíveis para compras.
+        Os nomes dos produtos estão agrupados em um array.
+    </h1>
+    <h2>Produtos</h2>
+    <ul></ul>
+    <script>
+       const produtos = ["arroz", "feijão", "açucar", "sal", "óleo"];
+       const lista = document.querySelector("ul");
+       
+       function li(){
+         const li = document.createElement("li");
+         return li;
+       }
+
+       for(let i = 0; i < produtos.length; i++){
+           lista.appendChild(li()).innerHTML = produtos[i];
+       }
+    </script>
+</body>
+</html>
