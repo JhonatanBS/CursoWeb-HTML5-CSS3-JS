@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 04</title>
+</head>
+<body>
+    <h1>Criar um array com três objetos e cada objeto com nome e email.
+        Mostrar na tela todos os emails e nomes.
+    </h1>
+    <div class="dado"></div>
+    <script>
+        const dado = document.querySelector(".dado");
+        const cliente = [
+            {nome: "Maria", email: "maria@gmail.com"},
+            {nome: "João", email: "joao@gmail.com"},
+            {nome: "Marta", email: "marta@gmail.com"}
+    ];
+
+        for(let i = 0; i < cliente.length; i++){
+            dado.innerHTML += cliente[i].nome + " " + cliente[i].email + "<br>";
+        }
+    </script>
+</body>
+</html>
