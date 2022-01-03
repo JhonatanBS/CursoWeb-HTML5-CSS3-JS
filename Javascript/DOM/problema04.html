@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 04</title>
+</head>
+<body>
+    <h1> Mostrar duas variáveis já definidas: nome e sobrenome. Concatenar elas em um input 
+         e em seguida desabilitar o input.
+    </h1>
+    <label for="name">Nome:</label>
+    <input type="text" class="input-nome" id="name" placeholder="Digite seu nome">
+    <script>
+        const $input = document.querySelector(".input-nome");
+        const $nome = "Maria Lúcia";
+        const $sobrenome = "Silva";
+
+        $input.value = $nome + " " + $sobrenome;
+
+        $input.disabled = true;
+    </script>
+</body>
+</html>
