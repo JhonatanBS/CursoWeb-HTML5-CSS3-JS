@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Problema 04</title>
+</head>
+<body>
+    <h1> Mostrar duas variáveis já definidas: nome e sobrenome. Concatenar elas em um input 
+         e em seguida desabilitar o input.
+    </h1>
+    
+    <div class="container">
+        <table class="table table-dark table-striped text-center">
+            <thead>
+                <tr>
+                    <td scope="col">Nomes</td>
+                    <td>Nota 01</td>
+                    <td>Nota 02</td>
+                    <td>Nota 03</td>
+                    <td>Nota 04</td>
+                    <td>Média</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">Pedro</td>
+                    <td class="notas">6.0</td>
+                    <td class="notas">8.0</td>
+                    <td class="notas">5.0</td>
+                    <td class="notas">9.0</td>
+                </tr>
+                <tr>
+                    <td scope="row">Maria</td>
+                    <td class="notas">10.0</td>
+                    <td class="notas">6.0</td>
+                    <td class="notas">9.0</td>
+                    <td class="notas">7.0</td>
+                </tr>
+                <tr>
+                    <td scope="row">Adriano</td>
+                    <td class="notas">4.0</td>
+                    <td class="notas">8.0</td>
+                    <td class="notas">5.0</td>
+                    <td class="notas">10.0</td>
+                </tr>
+                <tr>
+                    <td scope="row">Júlio</td>
+                    <td class="notas">8.0</td>
+                    <td class="notas">8.5</td>
+                    <td class="notas">7.0</td>
+                    <td class="notas">9.0</td>
+                </tr>
+                <tr>
+                    <td scope="row">João</td>
+                    <td class="notas">3.0</td>
+                    <td class="notas">9.0</td>
+                    <td class="notas">6.0</td>
+                    <td class="notas">8.8</td>
+                </tr>
+                <tr>
+                    <td scope="row">Marco</td>
+                    <td class="notas">7.0</td>
+                    <td class="notas">8.0</td>
+                    <td class="notas">7.0</td>
+                    <td class="notas">7.0</td>
+                </tr>
+                <tr>
+                    <td scope="row">José</td>
+                    <td class="notas">4.0</td>
+                    <td class="notas">5.0</td>
+                    <td class="notas">8.0</td>
+                    <td class="notas">6.0</td>
+                </tr>
+                <tr>
+                    <td scope="row">Joana</td>
+                    <td class="notas">5.0</td>
+                    <td class="notas">5.0</td>
+                    <td class="notas">8.0</td>
+                    <td class="notas">10.0</td>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+
+    <script>
+        let notas = document.querySelectorAll(".notas");
+        let dados = document.querySelectorAll("tbody tr");
+        for(let i = 0; i < dados.length ; i++){
+           dados[i].appendChild(td());
+
+        }
+
+        function td(){
+            const celula = document.createElement("td");
+            celula.classList.add("media");
+            return celula;
+        }
+
+        function capturaValores(){
+           const vetor = [];
+        //    let soma = 0;
+        //    let contador = 0; 
+           for(let i = 0; i < notas.length ; i++){
+            
+            //    if(contador === 4){
+            //        vetor.push(soma);
+            //        soma = 0;
+            //        contador = 0;
+            //    }
+            //        contador++;
+            //    soma += Number(notas[i].innerHTML);
+            vetor.push(Number(notas[i].innerHTML));  
+            
+           }
+           return vetor;
+        }
+
+        const media = capturaValores();
+
+        const valor = media.reduce(function(acumulador, valorAtual){
+            let contador;
+            contador++;
+
+            
+
+            if(contador === 4){
+                contador = 0;
+            }
+           return acumulador += valorAtual;
+        });
+
+    </script>
+</body>
+</html>
