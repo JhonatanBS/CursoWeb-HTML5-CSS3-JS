@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 03</title>
+</head>
+<body>
+    <h1> Mostrar na tela (div com um #msg) uma mensagem de boas-vindas, exemplo:
+         Bem vindo, Daniel!. O nome do usuário pode ser uma variável cujo valor 
+         foi digitado pelo input e deve estar em negrito.
+    </h1>
+    <label for="name">Nome:</label>
+    <input type="text" class="input-nome" id="name" placeholder="Digite seu nome">
+    <button id="btn-name" type="submit"> Enviar</button>
+    <div id="msg"></div>
+    <script>
+        const nome = document.querySelector(".input-nome");       
+        const msg = document.querySelector("#msg");
+        const btn = document.querySelector("#btn-name");
+        
+        nome.addEventListener("keypress", function(event){
+            if(event.which === 13){
+                msg.innerHTML = "Seja Bem vindo, <b>" + nome.value + "</b>";
+            }
+        });
+
+        btn.addEventListener("click", function(){
+            msg.innerHTML = "Seja Bem vindo, <b>" + nome.value + "</b>";
+        });
+
+    </script>
+</body>
+</html>
