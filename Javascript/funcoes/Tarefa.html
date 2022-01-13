@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa de funções</title>
+</head>
+<body>
+    <h1>Crie uma função que retorna a média de uma quantidade de parâmentros escolhidos pelo o usuário.
+        Obs: Pode ter quantos parâmetros o usuário desejar.
+    </h1>
+    <script>
+        const array = [];
+        const quantidade = Number(prompt("Quantos números deseja inserir na função?"));
+        let i = 0;
+
+        function rand(){
+            var max = 10;
+            var min = 0;
+            return Math.floor(Math.random() * (max - min) + min);
+        }
+
+        while( i < quantidade){
+          array.push(rand());
+          i++;
+        }
+
+        function calculaMedia(array){
+          const media = array.reduce(function(acumulador, valorAtual){
+             return acumulador + valorAtual;
+          });
+          return media / quantidade; 
+        }
+
+        calculaMedia(array);
+    </script>
+</body>
+</html>
