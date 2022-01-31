@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de click</title>
+</head>
+<body>
+    <h1>Evento Click</h1>
+    <button class="btn-1">Botão 01</button>
+    <button class="btn-2" onclick="fundo();">Botão 02</button> <!-- Modo menos utilizado -->
+</body>
+    <script>
+
+       const botao1 = document.querySelector(".btn-1"); 
+       const botao2 = document.querySelector(".btn-2"); 
+
+       // Modo mais utilizado
+       botao1.addEventListener("click",() =>{
+          botao1.style.backgroundColor = "red";
+          botao1.style.fontSize = "30px";
+       });
+
+       function fundo(){
+          return botao2.style.backgroundColor = "blue";
+       }
+
+    </script>
+</html>
