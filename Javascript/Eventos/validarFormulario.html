@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validando Formulário</title>
+    <style>
+     *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+     }
+
+     body{
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,82,9,1) 0%, rgba(255,149,0,1) 100%);
+        height: 100vh;
+        display: grid;
+        place-content: center;
+    }
+
+     .container{
+         height: 70vh;
+         width: 70vh;
+         /* border: 1px solid black; */
+         background-color: #ffff;
+         border-radius: 30px;
+     }
+
+     .card{
+         /* margin: 10%; */
+         height: 100%;
+         width: 100%;
+         padding: 200px;
+     }
+
+     form label, button{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        margin-bottom: 20px;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <form action="#">
+                <label for="user" class="usuario">Usuário
+                    <input type="text" id="user" name="user" placeholder="Digite o seu usuário...">
+                </label>
+
+                <label for="pass" class="senha">Senha
+                    <input type="password" id="pass" name="user" placeholder="Digite a sua senha...">
+                </label>
+                
+                <button class="btn">Logar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const $usuario = document.querySelector("#user");
+        const $senha = document.querySelector("#pass");
+
+        let $btn = document.querySelector(".btn");
+
+        $btn.addEventListener("click", () =>{
+          if(!$usuario.value || !$senha.value){
+              alert("Os campos estão vazios!");
+          }
+        });
+
+    </script>
+</body>
+</html>
